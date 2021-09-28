@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.fixed-h {
+    position: fixed;
+}
+
+.wrapper_content-h {
+    max-width: 1230px;
+    height: 100%;
+    margin: 0px auto !important;
+}
+
+/* Header */
+header {
+    padding-top: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: opacity 0.25s ease 1s;
+    animation: fadeIn .5s ease 2s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+header .logo-h {
+    position: fixed;
+}
+
+header #pho_title-h {
+    position: fixed; 
+    top: 165px;
+    transition: all .3s ease-out; 
+}
+
+header .center_links-h a {
+    font-family: Bayon;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    transition: color .25s ease;
+}
+
+header .center_links-h a {
+    text-decoration: none;
+}
+
+header .center_links-h a:hover::after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+header .center_links-h a::after {
+    content: "";
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    background-color: rgb(226, 24, 55);
+
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+}
+
+header .main_links-h a:hover {
+    background-color: #E21837;
+    text-decoration: none;
+}
+
+header .main_links-h a {
+    margin-right: -3px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 25px;
+    display: inline-block;
+    position: relative;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    font-size: 14px;
+    letter-spacing: .44px;
+    line-height: 26px;
+    transition: background-color .25s ease;
+}
+
+header .main_links-h a:last-child:hover {
+    background-color: #000;
+    position: relative;
+    padding: 0px;
+} 
+
+header .main_links-h a:last-child:hover i {
+    transform: scale(150%);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+} 
+
+header .main_links-h a:last-child {
+    width: 62px;
+    height: 66px;
+    background-color: #E21837;
+    font-size: 26px;
+    padding: 19px 18px;
+    vertical-align: middle;
+    margin-top: -7px;
+    margin-bottom: -4px;
+}
+
+header .main_links-h a i {
+    margin-right: 10px;
+}
+
+header .main_links-h a:last-child i{
+    margin-right: 0px;
+    transition: transform 0.2s ease;
+}
+
+
+.foreground .front_page_gradient-h {
+    width: 100%;
+    height: 35vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom,rgba(0,0,0,.65) 0, rgba(0,0,0,0) 100%);
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
+main .section_size-h {
+    max-height: 100vh;
+    min-height: 800px;
+    position: relative;
+    /* text-align: center; */
+}
+
+main .full_screen-h {
+    width: 100%;
+    height: 130vh;
+}
+
+section .wrapper_image-h {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip: rect(0,auto,auto,0);
+}
+
+section .wrapper_image-h img {
+    max-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    object-fit: cover;
+    /* transform: scale(1) perspective(0px);
+    transition: transform 0.5s_ease 0s; */
+}
+
+section .position_title-h {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+section .swipe_effect-h {
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    animation: swipeLeft 1.5s ease both;
+}
+
+section .position_title-h p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'KG HAPPY', sans-serif;
+    font-size: 70px;
+    line-height: 96px;
+    padding: 15px;
+    animation: swipeLeft 1s ease 1.5s both;
+}
+
+@keyframes swipeLeft {
+    /* from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    } */
+    0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+}
+
+section .section_actions-h {
+    animation: swipeLeft 1s ease 1.5s both;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+section .section_actions-h a:hover {
+    background-color: #000;
+    text-decoration: none;
+}
+
+section .section_actions-h a {
+    text-align: center;
+    width: 200px;
+    background-color: #E21837;
+    color: #fff;
+    padding: 25px;
+    margin: 0 .5px;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    font-size: 18px;
+    transition: all .25s ease;
+}
+
+/* Content-2-columns */
+main .col_content-h {
+    min-height: 800px;
+    position: relative;
+    text-align: center;
+}
+
+.col_content-h .bg_container-h {
+    width: 100%;
+    height: 100%;
+}
+
+.col_content-h .bg_container-h img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    /* position: fixed; */
+}
+
+.col_content-h .fg_container-h {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fg_container-h .title_bg_red-h {
+    color: #fff;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fg_container-h .title_bg_red-h p {
+    font-size: 34px;
+    line-height: 54px;
+    padding: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: rgb(226, 24, 55);
+    margin-bottom: 0px;
+}
+
+.fg_container-h .title_bg_white-h {
+    max-width: 600px;
+    margin: 0px auto 50px;
+    color: #000;
+    font-family: 'KG Happy';
+    text-align: center;
+}
+
+.fg_container-h .title_bg_white-h p{
+    font-size: 52px;
+    line-height: 52px;
+    padding: 15px;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+.fg_container-h .box_info-h {
+    max-width: 465px;
+    padding: 50px;
+    margin: 0px auto 30px;
+    background-color: #000;
+    font-family: 'KG Happy Solid';
+    text-align: center;
+}
+
+.fg_container-h .box_info-h p {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 35px;
+    letter-spacing: 0.32px;
+}
+
+.fg_container-h .button-h:hover {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-h {
+    display: inline-block;
+    background-color: rgb(226, 24, 55);
+    color: #fff;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    font-family: 'KG Happy Solid';
+    transition: all 0.25s ease 0s;
+}
+
+.fg_container-h .image .border-image {
+    width: 550px;
+    max-width: 100%;
+    margin: 0px auto;
+
+    padding: 20px; 
+    background-color: rgb(250, 247, 243);
+    border: 3px solid rgb(199, 199, 199);
+}
+
+.fg_container-h .image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.signup_social-h {
+    padding: 50px 0;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+.signup_social-h .row{
+    background-color: rgb(164, 218, 200);
+    border: 2px solid rgb(191, 191, 191);
+}
+
+.signup_social-h .signup-h {
+    border-right: 2px solid rgb(191, 191, 191);
+    padding: 20px;
+}
+
+.signup_social-h .signup-h img {
+    width: 92px;
+}
+
+.signup_social-h .signup-h form {
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: calc(100% - 120px);
+}
+
+.signup_social-h .signup-h label {
+    font-family: 'KG Tangled Up In You 2', sans-serif;
+    color: #000;
+    font-size: 48px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.signup_social-h .signup-h .input_email-h {
+    border: 2px solid rgb(191, 191, 191);
+    font-size: 14px;
+    line-height: 22px;
+    padding: 11px;
+    color: #000;
+    font-family: 'KG HAPPY Solid';
+    margin-right: 10px;
+}
+
+.signup_social-h .signup-h .input_submit-h:hover {
+    background-color: #000;
+}
+
+.signup_social-h .signup-h .input_submit-h {
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.signup_social-h .checkbox_holder-h p {
+    display: inline-block;
+    font-size: 12px;
+    max-width: 85%;
+    vertical-align: middle;
+    line-height: 14px;
+    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.signup_social-h .signup-h .error-h {
+    display: none;
+    font-size: 12px;
+    width: 50%;
+    line-height: 16px;
+    color: red;
+}
+
+.signup_social-h .social-h {
+    padding: 0px 40px;
+}
+
+.signup_social-h .social-h h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'KG Tangled Up In You 2', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    line-height: 42px;
+}
+
+.signup_social-h .social-h ul,
+.signup_social-h .social-h li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.signup_social-h .social-h ul {
+    margin-left: 20px;
+}
+
+.signup_social-h .social-h li {
+    padding: 0 10px;
+}
+
+.signup_social-h .social-h a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.signup_social-h .social-h a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgb(191, 191, 191);
+    background-color: #fff;
+    color: #000;
+    font-size: 26px;
+    line-height: 30px;
+    transition: all 0.25s ease 0s;
+    padding: 11px 12px;
+}
+
+.signup_social-h .social-h a[class*="facebook"] {
+    padding: 11px 17px;
+}
+.signup_social-h .social-h a[class*="insta"] {
+    padding: 11px 15px;
+}
+
+.signup_social-h .social-h a[class*="twitter"] {
+    padding: 11px 13px;
+}
