@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations - Vietnamese Street Food - Pho Restaurant</title>
+    <!-- Icon -->
+    <script
+      src="https://kit.fontawesome.com/dcbf3e0fa6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bayon"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/kg-happy" rel="stylesheet" />
+
+    <!-- Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/location.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex align-items-start">
+          <div class="logo-full" style="width: 75px; height: 164.028px">
+            <a href="">
+              <img class="logo" src="../images/home/logo.png" alt="" />
+              <img id="pho-title" src="../images/home/pho-title.png" alt="" />
+            </a>
+          </div>
+          <div class="center-links">
+            <a href="">MENU</a>
+            <a href="">LOCATIONS</a>
+            <a href="">OUR STORY</a>
+            <a href="">GET VOUCHERS</a>
+            <a href="">CAREERS</a>
+          </div>
+          <div
+            class="main-links"
+            style="width: 426.337px; /* height: 65.9896px; */"
+          >
+            <div class="fixed">
+              <a href=""><i class="fas fa-shopping-bag"></i>Book a Table</a>
+              <a href=""><i class="fas fa-map-marker-alt"></i>Pho to Go</a>
+              <a href=""><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Location site wrapper -->
+    <div class="site-wrapper locations-search">
+      <div class="background">
+        <div class="background__colour" style="background-color: #383a3e"></div>
+        <div class="background__image">
+          <img
+            src="../images/locations/Locations-Search-Background.jpg"
+            alt=""
+            style="transform: translateY(-6.66667px)"
+          />
+        </div>
+
+        <div class="background__gradient"></div>
+      </div>
+
+      <div class="foreground">
+        <main
+          class="content locations-search"
+          data-template="locations-search"
+          data-site-url="https://www.phocafe.co.uk"
+          data-ajax=""
+        >
+          <!-- Location Search Page -->
+
+          <div class="location-search__wrapper u__fullScreen">
+            <section class="location-search">
+              <div
+                class="u__wrapper row align-items-center justify-content-center"
+              >
+                <div class="col-12 text-center location-search__box">
+                  <div
+                    class="
+                      swipeEffect
+                      white-background white-background--desktop
+                      is-active
+                    "
+                  >
+                    <p class="swipeEffect__text">Find your Pho</p>
+                    <div class="swipeEffect__revealer"></div>
+                  </div>
+                  <div class="white-background white-background--mobile">
+                    <p>Find your Pho</p>
+                  </div>
+
+                  <div class="location-search__input">
+                    <div class="ls__input-wrapper">
+                      <div class="search-loading">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                      </div>
+                      <div class="search-error">
+                        <p>An error occured, please try refreshing the page!</p>
+                      </div>
+                      <i
+                        id="js__location-geolocation"
+                        class="fa fa-crosshairs"
+                        aria-hidden="true"
+                      ></i>
+                      <input
+                        id="js__location-search-input"
+                        type="text"
+                        name="location"
+                        placeholder="Enter location"
+                      />
+                    </div>
+                    <div class="ls__input-submit js__search-submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="ls__view-all">
+                      <i class="fa fa-th" aria-hidden="true"></i>
+                      <p>View All</p>
+                    </div>
+                  </div>
+
+                  <div class="grey-background">
+                    <p>
+                      Enter your postcode or town to find your local Pho or
+                      click "view all" to see a list of all our restaurants.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="all-locations-container u__wrapper">
+              <ul
+                class="pho-grid row align-items-center justify-content-center"
+              >
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/balham/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/balham-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Balham</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/battersea/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/battersea-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Battersea</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/birmingham/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/birmingham-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Birmingham</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/brighton/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/img02-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Brighton</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/bristol/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/bristol-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Bristol</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/cambridge/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/cambridge-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Cambridge</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/cardiff/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2019/07/2A50F0A0-6B15-4275-BC62-300077F5CE23-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Cardiff</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/chiswick/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/chiswick-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Chiswick</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/clerkenwell/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/clerkenwell-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Clerkenwell</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/covent-garden/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/covent-garden-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Covent Garden</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/ealing/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/ealing-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Ealing</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/edinburgh/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2020/09/201907_Pho_Hoarding_WithSauce_LRG_01-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Edinburgh</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/exeter/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/Pho-Image-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Exeter</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/guildford/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/JebsonPhoto-12-1-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Guildford</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/islington/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/angel-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Islington</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/kingston/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/kingston-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Kingston</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/leeds/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/location_leeds_header21-800x359.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Leeds</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/leicester/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/leicester2-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Leicester</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/lincoln/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2021/05/VNY-1-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Lincoln</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/liverpool/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/liverpool-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Liverpool</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/manchester/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/manchester-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Manchester</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/oxford/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/oxford-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Oxford</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/oxford-circus/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/Titchfield-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Oxford Circus</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/portsmouth/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2019/06/Screen-Shot-2019-07-12-at-16.31.54-800x458.png"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Portsmouth</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/reading/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/reading-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Reading</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/sheffield/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2020/01/JebsonPhoto-17-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Sheffield</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/soho/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/soho-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Soho</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/spitalfields/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/spitalfields-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Spitalfields</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/st-pauls/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/st-pauls-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>St Paul’s</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/stratford/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/stratford-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Stratford</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/westfield/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/Westfield-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Westfield</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="col-xl-4 col-md-6">
+                  <div class="grid-image u__imgBorder">
+                    <a
+                      href="https://www.phocafe.co.uk/locations/wimbledon/"
+                      class="ajax__ignore"
+                    >
+                      <img
+                        src="https://www.phocafe.co.uk/wp-content/uploads/2018/06/wimbledon-800x800.jpg"
+                        alt=""
+                      />
+                      <div class="white-background">
+                        <p>Wimbledon</p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <section class="location-search-results inactive">
+              <div
+                class="u__wrapper row align-items-center justify-content-center"
+              >
+                <div class="col-lg-6 results-list">
+                  <div class="black-background">
+                    <p>Nearest Pho</p>
+                  </div>
+
+                  <ul class="search-results">
+                    <!-- AJAX results here please -->
+                  </ul>
+
+                  <div class="search-actions">
+                    <a
+                      href="https://www.phocafe.co.uk/locations-search"
+                      class="button js__search-submit"
+                      >SEARCH AGAIN</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col-lg-6 results-map">
+                  <div class="map-wrapper u__imgBorder">
+                    <div id="js__location-search-map" class="js__results-map">
+                      <div class="js__results-map__loader">
+                        <div class="css-logo">
+                          <div class="lines">
+                            <div class="lines-inner">
+                              <div class="line left"></div>
+                              <div class="line center"></div>
+                              <div class="line right"></div>
+                            </div>
+                          </div>
+                          <div class="bowl-wrapper">
+                            <div class="bowl"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="" target="_blank" class="ajax__ignore"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="newsletter-wrapper">
+            <!-- Newsletter Module -->
+
+            <div class="newsletter u__wrapper">
+              <div class="row align-items-center">
+                <div class="signup col-md-6">
+                  <img
+                    src="https://www.phocafe.co.uk/wp-content/themes/pho-2018/library/images/notepad.png"
+                    alt="Notepad illustration"
+                  />
+
+                  <form
+                    action="//phocafe.us8.list-manage.com/subscribe/post?u=cb38cd57654941ccbbf3c9ad6&amp;id=5b84d1033c"
+                    method="post"
+                    id="footer__mailing-list__form"
+                    name="footer__mailing-list__form"
+                    class="signup__form mailing-list__form"
+                    novalidate=""
+                  >
+                    <label for="EMAIL">NEWS AND OFFERS</label>
+                    <div class="signup__input">
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="mailing-list__email input-email"
+                        id="footer__mailing-list__email"
+                        placeholder="Email"
+                        required=""
+                      />
+                      <input
+                        type="submit"
+                        value="Submit"
+                        name="subscribe"
+                        id="footer__mailing-list__submit"
+                        class="button input-submit mailing-list__submit"
+                      />
+                      <div class="checkbox_holder">
+                        <input
+                          type="checkbox"
+                          value=""
+                          name="PRIVACY"
+                          class="mailing-list__privacy"
+                          id="footer__mailing-list__privacy"
+                          required=""
+                        />
+                        <p>
+                          By signing up you are agreeing to receive marketing
+                          updates from Pho. You can find more information in our
+                          <a target="_blank" href="/privacy">Privacy Policy</a>
+                        </p>
+                      </div>
+                      <p class="error">Please agree to the privacy policy</p>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="social col-md-6">
+                  <h3>GET SOCIAL</h3>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/PhoRestaurant"
+                        target="_blank"
+                        class="facebook ajax__ignore"
+                        title="Visit our Facebook page for the latest news &amp; offers"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://instagram.com/phorestaurant"
+                        target="_blank"
+                        class="instagram ajax__ignore"
+                        title="Head to our Instagram page to see some of our snaps"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.snapchat.com/add/phorestaurant"
+                        target="_blank"
+                        class="snapchat ajax__ignore"
+                        ><i class="fa fa-snapchat-ghost" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/channel/UCGDqcT-lxY5urJTYqTszALw"
+                        target="_blank"
+                        class="youtube ajax__ignore"
+                        title="Head to our Youtube page to see Pho videos"
+                        ><i class="fa fa-youtube" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/PhoRestaurant"
+                        target="_blank"
+                        class="twitter ajax__ignore"
+                        title="See our latest tweets on Twitter"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Newsletter Module END -->
+          </section>
+        </main>
+      </div>
+    </div>
+    <!-- End location site wrapper -->
+    <footer></footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>
