@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-
-// Transition "pho-title-logo" when scroll up or down
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("pho-title").style.top = "165px";
-    document.getElementById("pho-title").style.opacity = "1";
-
-  } else {
-    document.getElementById("pho-title").style.top = "120px";
-    document.getElementById("pho-title").style.opacity = "0";
-  }
-  prevScrollpos = currentScrollPos;
-}
-=======
 // Transition "pho-title-logo" when scroll up or down
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -87,4 +70,3 @@ $(".main_links-h a:last-child").click(function() {
   $("#modal_nav_menu-h .nav_right-h").addClass("open_nav_menu-h");
 });
 
->>>>>>> 4bcccf1032a0e9d55ab47c65539976d005febba0

@@ -1,202 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-}
-
-/* Header */
-header {
-  padding-top: 40px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  transition: opacity 0.25s ease 0s;
-}
-header .container {
-  position: relative;
-  z-index: 9989;
+.u__wrapper {
   max-width: 1230px;
-  height: 100%;
-  margin: 0px auto !important;
+  margin: 0 auto;
 }
 
-header .logo {
-  position: fixed;
-}
 
-header #pho-title {
-  position: fixed; /* Make it stick/fixed */
-  top: 165px;
-  /* width: 100%; Full width */
-  transition: all 0.3s ease-out; /* Transition effect when sliding down (and up) */
-}
-
-header .center-links a {
-  font-family: Bayon;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 26px;
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  padding: 15px;
-  transition: color 0.25s ease;
-}
-
-header .center-links a {
-  text-decoration: none;
-}
-
-header .center-links a:hover::after {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-header .center-links a::after {
-  content: "";
-  width: 90%;
-  height: 4px;
-  position: absolute;
-  bottom: 10px;
-  left: 0px;
-  right: 0px;
-  margin: 0px auto;
-  background-color: rgb(226, 24, 55);
-
-  transform: translateX(-100px);
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-
-header .main-links {
-  position: fixed;
-  right: 0;
-}
-
-header .main-links a {
-  margin-right: -4px;
-  background-color: #000;
-  color: #fff;
-  padding: 20px 25px;
-  display: inline-block;
-  position: relative;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.44px;
-  line-height: 26px;
-  transition: background-color 0.25s ease;
-}
-/* Site location */
-/* Back ground */
-
-.background div.background__colour {
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-.background div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.background div.background__image {
-  height: 125%;
-  top: 0;
-  -webkit-transition: opacity 0.35s ease;
-  transition: opacity 0.35s ease;
-}
-.background div.background__gradient {
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.65) 0,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0.65)),
-    to(rgba(0, 0, 0, 0))
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.65) 0,
-    rgba(0, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
-  height: 35vh;
-  -webkit-transition: opacity 0.35s ease;
-  transition: opacity 0.35s ease;
-}
-.background div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* Foreground */
-.foreground main {
-  padding-top: 260px;
-}
-.location-search__wrapper.no-max-height {
-  max-height: 100%;
-  height: 100%;
-}
-.location-search__wrapper {
-  height: -webkit-calc(100vh - 250px);
-  height: calc(100vh - 250px);
-  min-height: 500px;
-  max-height: 100vh;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: height 0.25s ease;
-  transition: height 0.25s ease;
-}
-.u__fullScreen {
-  width: 100vw;
-  height: 130vh;
-}
-/* Location search wrapper */
-.location-search.is-active {
-  position: static !important;
-  height: auto;
-}
-.location-search__wrapper section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 0.25s ease, -webkit-transform 0.45s ease;
-  transition: opacity 0.25s ease, transform 0.45s ease;
-}
-.location-search .u__wrapper {
-  max-width: 725px;
-}
-.location-search__wrapper .u__wrapper {
-  -webkit-box-align: start !important;
-  -webkit-align-items: flex-start !important;
-  -ms-flex-align: start !important;
-  align-items: flex-start !important;
-}
 /* location-search */
+.location-search {
+  margin-top: 200px;
+}
+
 .swipeEffect__text {
   font-family: "KG HAPPY", sans-serif;
 }
@@ -374,4 +186,59 @@ header .main-links a {
   background-color: #485157;
   margin-bottom: 0;
 }
-/* all-locations-container */
+
+/* All- location */
+.all_location-cu li {
+  margin: 10px 0;
+}
+
+.location_item-cu {
+  padding: 20px;
+  background-color: #FAF7F3;
+  border: 3px solid #C7C7C7;
+  -webkit-box-shadow: 10px 10px 2px 0 rgb(0 0 0 / 5%);
+  box-shadow: 10px 10px 2px 0 rgb(0 0 0 / 5%);
+}
+
+
+
+.location_item-cu a{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: table;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.location_item-cu img{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.location_item-cu p {
+  font-family: 'KG HAPPY';
+  font-size: 40px;
+  background-color: #fff;
+    color: #000;
+    padding: 10px;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.location_item-cu a:hover img {
+  transform: scale(1.2);
+}
