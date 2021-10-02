@@ -538,7 +538,7 @@ main .col_content-h {
     font-size: 34px;
     line-height: 54px;
     padding: 10px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: inline-block;
     background-color: rgb(226, 24, 55);
     margin-bottom: 0px;
