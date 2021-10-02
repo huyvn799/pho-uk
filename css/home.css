@@ -112,6 +112,7 @@ header .center_links-h a::after {
 
 header .main_links-h {
     flex-basis: 400px;
+    transition: all 0.25s ease 0s;
 }
 
 header .main_links-h a:hover {
@@ -925,6 +926,7 @@ footer a:hover {
 
     header .main_links-h {
         flex-basis: 300px;
+        transition: opacity 0.25s ease 0s;
     }
 
     header .main_links-h a {
@@ -946,11 +948,62 @@ footer a:hover {
         left: 14px;
     }
 
+    #modal_nav_menu-h .nav_right-h {
+        padding-left: 0;
+    }
+
+    .nav_right-h .nav_menu-h {
+        margin-left: 55px;
+    }
+
+    .nav_right-h .close {
+        font-size: 30px;
+        padding: 15px;
+        padding-top: 5px;
+        right: 40px;
+    }
+
+    .nav_right-h .nav_social-h {
+        margin: 15px auto 15px;
+    }
+
+    .nav_right-h .nav_menu-h a {
+        font-size: 40px;
+    }
+
+    .nav_right-h .nav_social-h a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 0 8px;
+        padding: 5px 0;
+    }
+
+    .nav_right-h .nav_social-h a[class*="facebook"] {
+        padding-left: 17px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="insta"] {
+        padding-left: 14px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="snapchat"],
+    .nav_right-h .nav_social-h a[class*="twitter"] {
+        padding-left: 13px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="youtube"] {
+        padding-left: 12px;
+    }
+
+    .nav_right-h .copyright-h, 
+    .nav_right-h .product_link-h {
+        align-self: center;
+    }
+
     main .col_content-h {
         min-height: 1000px;
     }
-
-    
 
     section .position_title-h p {
         font-size: 34px;
