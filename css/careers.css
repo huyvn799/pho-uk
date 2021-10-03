@@ -12,6 +12,10 @@ body {
     background-image: url(./careers-20210925T030744Z-001/careers/background-2D2E30-1.jpg);
 }
 
+.center {
+    text-align: center;
+}
+
 .clearfloat {
     clear: both;
     float: none;
@@ -305,16 +309,167 @@ body {
     text-decoration: none;
 }
 
+
+/* vacancies */
+
+.fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+.vacancies {
+    /* border: black 2px solid; */
+    width: 100%;
+    /* margin-bottom: 5%; */
+}
+
+.vacancies-bgcolor {
+    /* background-color: rgba(226, 24, 55, 1); */
+    text-decoration: none;
+}
+
+.vacancies-color {
+    color: rgba(226, 24, 55, 1);
+    text-decoration: none;
+}
+
+.logo {
+    /* border: rgb(98, 0, 255) 1px solid; */
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.p1 a img {
+    width: 70px;
+    height: 140px;
+}
+
+.icon {
+    height: fit-content;
+    width: fit-content;
+    /* border: orangered 2px solid; */
+    position: absolute;
+    top: 8%;
+    right: 8%;
+}
+
+.icon a i {
+    font-size: 45px;
+}
+
+.icon a :hover {
+    color: black;
+}
+
+.vac-btn {
+    background-color: rgba(226, 24, 55, 1);
+    text-decoration: none;
+    color: white;
+    border: black 2px solid;
+    padding: 15px 30px;
+    font-size: 25px;
+    transition: all 1s ease-in-out;
+}
+
+.vac-btn :hover {
+    transform: scale(1.2);
+}
+
+.p2 {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+#myvideo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.p2-content {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    padding: 20px;
+}
+
+.vac-btn {
+    transition: 0.3s ease-in-out;
+}
+
+.vac-btn:hover {
+    transform: scale(1.2);
+}
+
+.p3-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.p3-detail {
+    width: 86%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.p3 h1 {
+    margin: 2% auto;
+}
+
+.p4,
+.p5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.p4-content,
+.p5-content {
+    width: 40%;
+    /* border: red 1px solid; */
+    color: #3e3e3e;
+}
+
+.p4-content img,
+.p5-content img {
+    width: 100%;
+    /* border: rgb(0, 255, 55) 1px solid; */
+}
+
+.p4-detail,
+.p5-detail {
+    margin: 5%;
+}
+
+.p6 {
+    background-color: rgba(226, 24, 55, 1);
+}
+
+.p6 img {
+    width: 40%;
+    margin: auto;
+}
+
+.p7 img {
+    width: 100%;
+    height: auto;
+}
+
+.p8 img {
+    width: 10%;
+}
+
 @media only screen and (max-width: 768px) {
     .left {
         width: 100%;
         height: auto;
         float: none;
-    }
-    .title a h1 {
-        width: 99%;
-        height: auto;
-        font-size: 200%;
     }
     .right {
         float: none;
@@ -324,12 +479,19 @@ body {
     }
     .selector {
         width: 100%;
+        height: auto;
+        text-align: center;
     }
     .selector a {
         width: 35%;
         height: auto;
         font-size: 80%;
         font-size: 90%;
+    }
+    .title h1 {
+        width: 100%;
+        margin: auto;
+        font-size: 50px;
     }
     .pho-element {
         width: 90%;
@@ -344,17 +506,73 @@ body {
         width: 80%;
         font-size: 80%;
     }
-    .con2 {
-        margin-top: 50%;
+    .container.con1 {
+        width: 100%;
+        display: block;
     }
     .right video {
+        display: block;
         width: 100%;
         height: auto;
-        margin: auto;
+        margin-bottom: 0;
     }
-    .con2 {
-        margin-top: 400px;
+    .p1-content {
+        text-align: center;
+    }
+    .phopride {
+        width: 100%;
+    }
+    .iframe iframe {
+        width: 100%;
+    }
+    .p2 {
+        width: 100%;
+        height: 500px;
+    }
+    .p4,
+    .p5 {
+        display: block;
+    }
+    .p4-content,
+    .p5-content {
+        width: 100%;
+    }
+    .icon {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 992x) {}
+@media only screen and (max-width: 1200px) {
+    .container.con1 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .left {
+        width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+    .right {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .title h1 {
+        width: 100%;
+        margin: auto;
+    }
+    .selector {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .selector a {
+        width: 35%;
+        height: auto;
+        font-size: 80%;
+        font-size: 90%;
+    }
+}
