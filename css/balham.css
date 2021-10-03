@@ -1,0 +1,151 @@
+/* Common */
+/* Site balham */
+.location-hero-slider{
+}
+.slider-wrapper-cu{
+    
+    position: relative;
+    max-width: 1230px;
+    margin: 0 auto;
+    height: 700px;
+}
+.u__imgBorder{
+    padding: 20px;
+    background-color: #FAF7F3;
+    border: 3px solid #C7C7C7;
+}
+.slider-wrapper-cu img{
+    width: 100%;
+    height: 100%;
+}
+.slider-wrapper-cu .swipeEffect__text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: #FFF;
+    font-size: 60px;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+}
+.slider-wrapper-cu .white-background{
+    color: black;
+}
+.slider-wrapper-cu .link-rows{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+
+}
+.link-rows .button{
+    display: inline-block;
+    background-color: #E21837;
+    color: #fff;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: .35px;
+    font-family: 'KG HAPPY Solid', sans-serif;
+}
+.link-rows a{
+    text-decoration: none;
+}
+.link-rows .button:hover{
+    background-color: #000;
+}
+.location-contact{
+    padding: 50px 0;
+}
+.location-contact .contact-half {
+    padding-right: 60px;
+}
+.location-contact .contact-rows {
+    background-color: #fff;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    padding: 20px;
+}
+.location-contact .contact-rows h2 {
+    color: #000;
+    font-size: 28px;
+    line-height: 72px;
+}
+.contact-details{
+    margin-bottom: 20px;
+}
+.contact-details a,
+.contact-details p{
+    color: #787676;
+    font-size: 18px;
+    line-height: 26px;
+    min-height: 26px;
+    text-decoration: none;
+}
+.contact-rows .col-5,
+.contact-rows .col-7{
+    padding: 20px;
+}
+.contact-rows .citymapper {
+    background-color: #37AB2F;
+    border: 2px solid #37AB2F;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.location-contact .icons div {
+    display: inline-block;
+    vertical-align: middle;
+    color: #787676;
+    font-size: 25px;
+    line-height: 25px;
+    padding-right: 10px;
+}
+.location-contact .map-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+}
+.map-wrapper #js__location-single-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/locations/balham/map_square.jpg);
+}
+.map-wrapper #js__location-single-map a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* location-blog */
+
+/* location-instagram */
+.location-instagram {
+    padding: 50px 0;
+}
+.location-instagram .even {
+    margin-top: -30px;
+}
+.location-instagram .odd {
+    margin-bottom: -30px;
+}
+.location-instagram .image-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 335px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.location-instagram .fab {
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.location-instagram .image-wrapper img {
+    width: 100%;
+    height: 335px;
+}

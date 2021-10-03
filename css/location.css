@@ -1,6 +1,6 @@
 .u__wrapper {
   max-width: 1230px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   margin-top: 200px;
 }
 .white-background {
