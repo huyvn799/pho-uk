@@ -481,6 +481,7 @@ body {
         width: 100%;
         height: auto;
         text-align: center;
+        /* margin: 10% auto; */
     }
     .selector a {
         width: 35%;
