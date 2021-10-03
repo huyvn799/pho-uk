@@ -5,13 +5,20 @@
 }
 .white-background {
   color: #000;
-  /* display: inline-block; */
+  font-family: "KG HAPPY", sans-serif;
+  display: inline-block;
   text-align: center;
 }
 .swipeEffect__text {
   font-family: "KG HAPPY", sans-serif;
 }
-
+.white-background p {
+  padding: 15px;
+  white-space: nowrap;
+  display: inline-block;
+  background-color: #fff;
+  margin-bottom: 0;
+}
 .location-search .white-background p {
   font-size: 80px;
   line-height: 96px;

@@ -117,8 +117,53 @@
     width: 100%;
     height: 100%;
 }
+.contact-rows .citymapper:hover{
+    background-color: #fff;
+    color: #37AB2F;
+}
 /* location-blog */
-
+.location-blog {
+    padding-bottom: 50px;
+}
+.location-blog .blog-half{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+.blog-half .mailbox {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.blog-half .blog-list__wrapper ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+.blog-half .blog-list__wrapper li {
+    display: block;
+    border: 2px solid #C7C7C7;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #A4DAC8;
+    font-family: 'KG HAPPY Solid', sans-serif;
+}
+.blog-list__wrapper li a {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+}
+.blog-list__wrapper li h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #000;
+    
+}
+.blog-list__wrapper li:hover h3{
+    color: white;
+}
+.blog-list__wrapper li:hover{
+    background-color: #E21837;
+}
 /* location-instagram */
 .location-instagram {
     padding: 50px 0;
@@ -148,4 +193,126 @@
 .location-instagram .image-wrapper img {
     width: 100%;
     height: 335px;
+}
+.location-blog .image-half {
+    margin-top: -35px;
+    padding-right: 20px;
+}
+.location-blog .image-half .image-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.location-blog .image-half .image-wrapper img {
+    width: 100%;
+    height: 400px;
+}
+.spotify-player-header {
+    margin: 45px auto 12px;
+    display: block;
+    margin-bottom: 20px;
+}
+.spotify-player-header p {
+    font-size: 28px;
+    line-height: 1.1;
+}
+.spotify-player-header p img {
+    height: 30px;
+    margin-right: 10px;
+}
+.spotify-qr {
+    width: 290px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.spotify-qr img{
+    max-width: 100%;
+}
+/* location-newsletter */
+.location-newsletter {
+    padding: 50px 0;
+}
+.location-newsletter .image-half img {
+    max-height: 245px;
+}
+.form-half {
+    padding-right: 40px;
+}
+.location-newsletter .lnewsletter__inner {
+    background-color: #A4DAC8;
+    padding: 30px 20px;
+}
+.location-newsletter .lnewsletter__inner form {
+    margin: 0 auto;
+}
+.location-newsletter .lnewsletter__inner .lnewsletter-column {
+    max-width: 20%;
+    flex: 0 0 20%;
+    padding: 10px;
+}
+.location-newsletter .lnewsletter__inner h3 {
+    font-size: 48px;
+    line-height: 42px;
+    color: #000;
+    font-family: 'KG Tangled Up In You 2', sans-serif;
+}
+.location-newsletter .lnewsletter__inner .input-box {
+    width: 100%;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #8F9094;
+}
+.location-newsletter .lnewsletter__inner select {
+    width: 100%;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #8F9094;
+    height: 49px;
+}
+.location-newsletter .lnewsletter__inner .button {
+    width: 100%;
+    padding: 10px 20px;
+}
+.location-newsletter .lnewsletter__inner .button {
+    width: 100%;
+    padding: 10px 20px;
+}
+.lnewsletter__inner .button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #E21837;
+    color: #fff;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: .35px;
+    font-family: 'KG HAPPY Solid', sans-serif;
+    
+}
+.lnewsletter__inner .button:hover{
+    background-color: #000;
+}
+.checkbox_holder {
+    max-width: 409px;
+    margin-left: 4%;
+}
+.checkbox_holder input {
+    display: inline-block;
+}
+.checkbox_holder p {
+    display: inline-block;
+    font-size: 12px;
+    max-width: 85%;
+    vertical-align: middle;
+    line-height: 14px;
+    margin-bottom: 9px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+.checkbox_holder a {
+    color: #E21837;
 }
