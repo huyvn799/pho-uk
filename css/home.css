@@ -112,6 +112,7 @@ header .center_links-h a::after {
 
 header .main_links-h {
     flex-basis: 400px;
+    transition: all 0.25s ease 0s;
 }
 
 header .main_links-h a:hover {
@@ -395,22 +396,26 @@ header .main_links-h a:last-child i {
     top: 0;
     left: 0;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 0, rgba(0, 0, 0, 0) 100%);
-}
-
-main .section_size-h {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  
+  main .section_size-h {
     max-height: 100vh;
     min-height: 800px;
     position: relative;
     /* text-align: center; */
-}
-
-main .full_screen-h {
+  }
+  
+  main .full_screen-h {
     width: 100%;
     height: 130vh;
-}
-
-section .wrapper_image-h {
+  }
+  
+  section .wrapper_image-h {
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -418,122 +423,122 @@ section .wrapper_image-h {
     top: 0;
     left: 0;
     clip: rect(0, auto, auto, 0);
-}
-
-section .wrapper_image-h img {
+  }
+  
+  section .wrapper_image-h img {
     max-width: 100%;
     min-height: 100%;
     position: fixed;
     object-fit: cover;
     /* transform: scale(1) perspective(0px);
     transition: transform 0.5s_ease 0s; */
-}
-
-section .position_title-h {
+  }
+  
+  section .position_title-h {
     position: absolute;
     top: 40%;
     left: 0;
     right: 0;
     margin: 0 auto;
     z-index: 10;
-}
-
-section .swipe_effect-h {
+  }
+  
+  section .swipe_effect-h {
     background-color: #fff;
     display: inline-block;
     text-align: center;
     margin: 0 auto;
     position: relative;
     animation: swipeLeft 1.5s ease both;
-}
-
-section .position_title-h p {
+  }
+  
+  section .position_title-h p {
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 0px;
     background-color: #fff;
     color: #000;
-    font-family: 'KG HAPPY', sans-serif;
+    font-family: "KG HAPPY", sans-serif;
     font-size: 70px;
     line-height: 96px;
     padding: 15px;
     animation: swipeLeft 1s ease 1.5s both;
-}
-
-@keyframes swipeLeft {
+  }
+  
+  @keyframes swipeLeft {
     from {
-        width: 0;
+      width: 0;
     }
-
+  
     to {
-        width: 100%;
+      width: 100%;
     }
-}
-
-section .section_actions-h {
+  }
+  
+  section .section_actions-h {
     animation: swipeLeft 1s ease 1.5s both;
     overflow: hidden;
     white-space: nowrap;
     margin-top: 50px;
     margin-left: 0px;
-}
-
-section .section_actions-h a:hover {
+  }
+  
+  section .section_actions-h a:hover {
     background-color: #000;
     text-decoration: none;
-}
-
-section .section_actions-h a {
+  }
+  
+  section .section_actions-h a {
     text-align: center;
     width: 200px;
-    background-color: #E21837;
+    background-color: #e21837;
     color: #fff;
     padding: 25px;
     margin: 1px 1px;
-    font-family: 'KG HAPPY Solid', sans-serif;
+    font-family: "KG HAPPY Solid", sans-serif;
     font-size: 18px;
-    transition: all .25s ease;
-}
-
-/* Section Content-2-columns */
-main .col_content-h {
+    transition: all 0.25s ease;
+  }
+  
+  /* Section Content-2-columns */
+  main .col_content-h {
     min-height: 800px;
     position: relative;
     text-align: center;
-}
-
-.col_content-h .bg_container-h {
+  }
+  
+  .col_content-h .bg_container-h {
     width: 100%;
     height: 100%;
-}
-
-.col_content-h .bg_container-h img {
+  }
+  
+  .col_content-h .bg_container-h img {
     max-width: 100%;
     min-height: 100%;
     object-fit: cover;
     z-index: 0;
     /* position: fixed; */
-}
-
-.col_content-h .fg_container-h {
+  }
+  
+  .col_content-h .fg_container-h {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-}
-
-.col_content-h:nth-child(even) .text {
+  }
+  
+  .col_content-h:nth-child(even) .text {
     order: 1;
-}
-
-.fg_container-h .title_bg_red-h {
+  }
+  
+  .fg_container-h .title_bg_red-h {
     color: #fff;
-    font-family: 'KG HAPPY Solid', sans-serif;
+    font-family: "KG HAPPY Solid", sans-serif;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.fg_container-h .title_bg_red-h p {
+  }
+  
+  .fg_container-h .title_bg_red-h p {
     font-size: 34px;
     line-height: 54px;
     padding: 10px;
@@ -541,17 +546,17 @@ main .col_content-h {
     display: inline-block;
     background-color: rgb(226, 24, 55);
     margin-bottom: 0px;
-}
-
-.fg_container-h .title_bg_white-h {
+  }
+  
+  .fg_container-h .title_bg_white-h {
     max-width: 600px;
     margin: 0px auto 50px;
     color: #000;
-    font-family: 'KG Happy';
+    font-family: "KG Happy";
     text-align: center;
-}
-
-.fg_container-h .title_bg_white-h p {
+  }
+  
+  .fg_container-h .title_bg_white-h p {
     font-size: 52px;
     line-height: 52px;
     padding: 15px;
@@ -559,44 +564,41 @@ main .col_content-h {
     display: inline-block;
     background-color: #fff;
     margin-bottom: 0px;
-}
-
-.fg_container-h .box_info-h {
+  }
+  
+  .fg_container-h .box_info-h {
     max-width: 465px;
     padding: 50px;
     margin: 0px auto 30px;
     background-color: #000;
-    font-family: 'KG Happy Solid';
+    font-family: "KG Happy Solid";
     text-align: center;
-}
-
-.fg_container-h .box_info-h p {
+  }
+  
+  .fg_container-h .box_info-h p {
     display: inline-block;
     color: #fff;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 35px;
     letter-spacing: 0.32px;
-}
-
-
-
-
-.fg_container-h .image .border-image {
+  }
+  
+  .fg_container-h .image .border-image {
     width: 550px;
     max-width: 100%;
     margin: 0px auto;
-
+  
     padding: 20px;
     background-color: rgb(250, 247, 243);
     border: 3px solid rgb(199, 199, 199);
-}
-
-.fg_container-h .image img {
+  }
+  
+  .fg_container-h .image img {
     width: 100%;
     height: 550px;
     object-fit: cover;
-}
+  }
 
 /* Signup and Social */
 
@@ -925,6 +927,7 @@ footer a:hover {
 
     header .main_links-h {
         flex-basis: 300px;
+        transition: opacity 0.25s ease 0s;
     }
 
     header .main_links-h a {
@@ -946,11 +949,62 @@ footer a:hover {
         left: 14px;
     }
 
+    #modal_nav_menu-h .nav_right-h {
+        padding-left: 0;
+    }
+
+    .nav_right-h .nav_menu-h {
+        margin-left: 55px;
+    }
+
+    .nav_right-h .close {
+        font-size: 30px;
+        padding: 15px;
+        padding-top: 5px;
+        right: 40px;
+    }
+
+    .nav_right-h .nav_social-h {
+        margin: 15px auto 15px;
+    }
+
+    .nav_right-h .nav_menu-h a {
+        font-size: 40px;
+    }
+
+    .nav_right-h .nav_social-h a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 0 8px;
+        padding: 5px 0;
+    }
+
+    .nav_right-h .nav_social-h a[class*="facebook"] {
+        padding-left: 17px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="insta"] {
+        padding-left: 14px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="snapchat"],
+    .nav_right-h .nav_social-h a[class*="twitter"] {
+        padding-left: 13px;
+    }
+
+    .nav_right-h .nav_social-h a[class*="youtube"] {
+        padding-left: 12px;
+    }
+
+    .nav_right-h .copyright-h, 
+    .nav_right-h .product_link-h {
+        align-self: center;
+    }
+
     main .col_content-h {
         min-height: 1000px;
     }
-
-    
 
     section .position_title-h p {
         font-size: 34px;
