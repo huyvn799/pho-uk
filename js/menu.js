@@ -248,6 +248,12 @@ for (let i = 0; i < a_MenuDesktops.length; i++) {
                         item.classList.remove("inFilter");
                         item.classList.remove("outFilter");
                     });
+
+                    for (let i = 0; i < boxFilters.length; i++) {
+                        if (boxFilters[i].classList.contains("active")) {
+                            
+                        }
+                    }
                 } else {
                     boxFilters[i].classList.add("active");
                     items.forEach(function (item) {
