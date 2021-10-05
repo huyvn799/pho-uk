@@ -45,10 +45,6 @@ body {
     background-color: white;
 }
 
-.padding-50 {
-    padding: 50px 0 20px 30px;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -187,13 +183,12 @@ body {
 /* legend */
 
 .item {
-    width: 350px;
+    width: 90%;
     height: 470px;
+    padding: 5%;
     background-color: white;
-    padding: 10px 15px;
-    margin: 0 auto;
+    margin: auto;
     border: solid 2px gray;
-    margin: 10px;
 }
 
 .pho-element:hover {
@@ -201,8 +196,9 @@ body {
 }
 
 .element {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    /* border: springgreen 3px solid; */
 }
 
 .pho-element img {
@@ -211,21 +207,35 @@ body {
     margin: 0 auto;
 }
 
-
-/* .pho-element {
+.pho-element {
+    width: 33%;
+    height: 100%;
+    /* border: red 3px solid; */
+    display: flex;
     text-decoration: none;
     float: left;
-} */
+    margin: 1% auto;
+}
 
 .pho-detail {
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     font-size: 15px;
     font-weight: bold;
+    /* border: red 3px solid; */
 }
 
-.position {
-    width: 200px;
+.dt1 {
+    width: 100%;
+    font-size: 1rem;
+    /* border: solid rgb(146, 205, 90) 3px; */
+}
+
+.dt2 {
+    font-size: 1rem;
+    padding-left: 5%;
+    /* border: rgb(55, 16, 231) 3px solid; */
 }
 
 
@@ -239,74 +249,6 @@ body {
 .phopride video {
     width: 100%;
     height: auto;
-}
-
-
-/* feedback */
-
-.container.container.con1.fbcontainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* border: royalblue solid 3px; */
-    margin-top: 6%;
-}
-
-.feedback {
-    width: 40%;
-    margin: 0 auto;
-    /* border: olivedrab 1px solid; */
-    margin-top: 15%;
-}
-
-.feedback h1 {
-    width: 100%;
-    height: auto;
-    text-decoration: none;
-    text-align: center;
-    font-size: 50px;
-}
-
-.fbleft {
-    float: left;
-    width: 48%;
-    /* border: olivedrab 3px solid; */
-}
-
-.fbright {
-    float: right;
-    width: 48%;
-    /* border: olivedrab 3px solid; */
-}
-
-
-/* contact */
-
-.input-contact {
-    width: 100%;
-    height: auto;
-}
-
-.contact-item input,
-.contact-item select,
-.contact-item textarea {
-    width: 100%;
-    padding: 10px;
-}
-
-.btn {
-    padding: 4% 10%;
-    background-color: #E21837;
-    color: white;
-    text-decoration: none;
-    width: fit-content;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    background-color: black;
-    color: white;
-    text-decoration: none;
 }
 
 
@@ -368,11 +310,6 @@ body {
     border: black 2px solid;
     padding: 15px 30px;
     font-size: 25px;
-    transition: all 1s ease-in-out;
-}
-
-.vac-btn :hover {
-    transform: scale(1.2);
 }
 
 .p2 {
@@ -398,12 +335,10 @@ body {
     padding: 20px;
 }
 
-.vac-btn {
-    transition: 0.3s ease-in-out;
-}
-
-.vac-btn:hover {
-    transform: scale(1.2);
+.p2-content:hover,
+.p3-content:hover {
+    transform: scale(1.1);
+    transition: transform linear 0.2s;
 }
 
 .p3-content {
@@ -465,6 +400,25 @@ body {
     width: 10%;
 }
 
+#backtop {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#backtop:hover {
+    background-color: rgb(165, 164, 164);
+}
+
 @media only screen and (max-width: 768px) {
     .left {
         width: 100%;
@@ -481,32 +435,58 @@ body {
         width: 100%;
         height: auto;
         text-align: center;
-        /* margin: 10% auto; */
+        font-size: 80%;
+        padding: 0;
     }
     .selector a {
-        width: 35%;
+        width: 30%;
         height: auto;
         font-size: 80%;
-        font-size: 90%;
+        /* border: solid red 3px; */
     }
     .title h1 {
         width: 100%;
         margin: auto;
-        font-size: 50px;
+        font-size: 300%;
     }
     .pho-element {
         width: 90%;
         font-size: 90%;
         margin: 0 auto;
     }
+    /* pho legend */
+    .pho-element {
+        width: 100%;
+        float: none;
+        margin: 2% auto;
+    }
     .item {
         width: 100%;
-        height: 30%;
+        height: 100%;
     }
     .pho {
         width: 80%;
         font-size: 80%;
     }
+    .pho-detail {
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 125%;
+    }
+    /* feedback */
+    .feedback h1 {
+        width: fit-content;
+        font-size: 2rem;
+    }
+    .fbcontainer {
+        display: block;
+    }
+    .fbleft,
+    .fbright {
+        width: 100%;
+    }
+    /* vacancies */
     .container.con1 {
         width: 100%;
         display: block;
@@ -530,6 +510,15 @@ body {
         width: 100%;
         height: 500px;
     }
+    .p2-content {
+        position: absolute;
+        bottom: 10%;
+        margin: 0 auto;
+    }
+    .p2-content a {
+        width: 50px;
+        height: auto;
+    }
     .p4,
     .p5 {
         display: block;
@@ -538,8 +527,15 @@ body {
     .p5-content {
         width: 100%;
     }
+    .p4-detail,
+    .p5-detail {
+        width: 80%;
+        margin: auto;
+    }
     .icon {
+        margin: 0 auto;
         display: none;
+        position: unset;
     }
 }
 
@@ -566,14 +562,33 @@ body {
         margin: auto;
     }
     .selector {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        height: fit-content;
         text-align: center;
     }
     .selector a {
         width: 35%;
         height: auto;
+        font-size: 100%;
+    }
+    /* pho legend */
+    .pho-element {
+        width: 100%;
+    }
+    .pho-detail {
+        width: 100%;
+        display: flex;
+        /* border: rgb(0, 255, 242) 3px solid; */
+    }
+    .dt1 {
+        width: 100%;
         font-size: 80%;
-        font-size: 90%;
+        /* border: red 3px solid; */
+    }
+    .dt2 {
+        width: 50%;
+        margin-left: 10%;
+        font-size: 80%;
+        /* border: rgb(0, 255, 13) 3px solid; */
     }
 }
