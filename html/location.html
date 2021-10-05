@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+
+    <!-- Icon FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bayon"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/kg-happy" rel="stylesheet" />
+    <link
+      href="http://fonts.cdnfonts.com/css/kg-tangled-up-in-you"
+      rel="stylesheet"
+    />
+
+    <!-- Carousel JQuery -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+
+    <!-- Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container wrapper_content-h">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="logo-full" style="width: 75px; height: 164.028px">
+            <a href="">
+              <img class="logo-h" src="../images/home/logo.png" alt="" />
+              <img id="pho_title-h" src="../images/home/pho-title.png" alt="" />
+            </a>
+          </div>
+          <div class="center_links-h">
+            <a href="">MENU</a>
+            <a href="">LOCATIONS</a>
+            <a href="">OUR STORY</a>
+            <a href="">GET VOUCHERS</a>
+            <a href="">CAREERS</a>
+          </div>
+          <!-- <div class="main_links-h" style="width: 406px; height: 66px;"> -->
+          <div class="main_links-h">
+            <div class="fixed-h nav">
+              <a class="nav-link" href=""
+                ><i class="fas fa-shopping-bag"></i>Book a Table</a
+              >
+              <a
+                class="nav-link"
+                href=""
+                data-backdrop="false"
+                data-toggle="modal"
+                data-target="#modal_pho_to_go-h"
+              >
+                <i class="fas fa-map-marker-alt"></i>Pho To Go</a
+              >
+              <a
+                class="nav-link"
+                href=""
+                data-backdrop="false"
+                data-toggle="modal"
+                data-target="#modal_nav_menu-h"
+              >
+                <i class="fas fa-bars"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal Pho To Go in header  -->
+      <div class="modal fade" id="modal_pho_to_go-h">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+
+            <div class="modal-body row justify-content-center">
+              <a href="" class="button-h">Click & Collect</a>
+              <a href="" class="button-h">Delivery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav menu in header  -->
+      <div class="modal" id="modal_nav_menu-h">
+        <div class="nav_right-h row justify-content-center align-items-start">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <ul class="nav nav_menu-h">
+            <li class="nav-item">
+              <a class="nav-link" href="">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">LOCATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">PHO TO GO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">BOOKINGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="nav nav_social-h">
+            <li class="nav-item">
+              <a href="" class="nav-link facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link insta"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link snapchat"
+                ><i class="fab fa-snapchat-ghost"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav nav_footer-h">
+            <li class="nav-item">
+              <a class="nav-link" href="">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gift vouchers</a>
+            </li>
+          </ul>
+          <p class="copyright-h">© Copyright Pho 2021.</p>
+          <a class="product_link-h" href="">Website by F4.1 students</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="entire_body">
+      <div class="background">
+        <div class="background_color-h"></div>
+        <div class="background_image-h">
+          <img src="../images/home/Hero-Image-1.jpg" alt="" />
+        </div>
+        <div class="background_gradient-h"></div>
+
+        <!-- Chỗ ae code -->
+        <!-- Location Search Page -->
+        <div class="location-search__wrapper u__fullScreen">
+          <section class="location-search">
+            <div
+              class="u__wrapper row align-items-center justify-content-center"
+            >
+              <div class="col-12 text-center location-search__box">
+                <div
+                  class="
+                    swipeEffect
+                    white-background white-background--desktop
+                    is-active
+                  "
+                >
+                  <p class="swipeEffect__text">Find your Pho</p>
+                  <div class="swipeEffect__revealer"></div>
+                </div>
+                <div class="white-background white-background--mobile">
+                  <p>Find your Pho</p>
+                </div>
+
+                <div class="location-search__input">
+                  <div class="ls__input-wrapper">
+                    <div class="search-loading">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                    </div>
+                    <div class="search-error">
+                      <p>An error occured, please try refreshing the page!</p>
+                    </div>
+                    <i
+                      id="js__location-geolocation"
+                      class="fa fa-crosshairs"
+                      aria-hidden="true"
+                    ></i>
+                    <input
+                      id="js__location-search-input"
+                      type="text"
+                      name="location"
+                      placeholder="Enter location"
+                    />
+                  </div>
+                  <div class="ls__input-submit js__search-submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="ls__view-all">
+                    <i class="fa fa-th" aria-hidden="true"></i>
+                    <p>View All</p>
+                  </div>
+                </div>
+
+                <div class="grey-background">
+                  <p>
+                    Enter your postcode or town to find your local Pho or click
+                    "view all" to see a list of all our restaurants.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Xoá hết image đi -->
+      </div>
+      <div class="foreground">
+        <main class="content">
+          <div class="front_page_gradient-h"></div>
+
+          <!-- Section Home -->
+          <section class="section_size-h full_screen-h">
+            <div class="wrapper_image-h">
+              <img src="../images/home/Hero-Image-1.jpg" alt="" />
+            </div>
+            <div class="container wrapper_content-h position_title-h">
+              <div class="section_title-h">
+                <div class="swipe_effect-h">
+                  <p class="swipe_text-h">Vietnamese street food</p>
+                </div>
+              </div>
+              <div class="section_actions-h row justify-content-center">
+                <a href="">Menu</a>
+                <a href="">Book A Table</a>
+                <a href="">Pho To Go</a>
+                <a href="">Students</a>
+                <a href="">Nutrition</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section Column Content -->
+          <!-- Section content Sales-->
+          <section class="col_content-h full_screen-h">
+            <!-- <div class="bg_container-h">
+                        <img src="../images/home/Nutrition-Single-Background2.jpg" alt="">
+                    </div> -->
+
+            <div
+              class="
+                fg_container-h
+                wrapper_content-h
+                row
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="text col-md-6">
+                <div class="title_bg_red-h">
+                  <p>25% OFF</p>
+                </div>
+                <div class="title_bg_white-h">
+                  <p>JUST PHO STUDENTS</p>
+                </div>
+                <div class="box_info-h">
+                  <p>
+                    We've teamed with the SMASH app to offer students a healthy
+                    discount at all of our restaurants for a limited time...
+                  </p>
+                  <a href="" class="button-h">Learn More</a>
+                </div>
+              </div>
+              <div class="image col-md-6">
+                <div class="border-image">
+                  <img src="../images/home/IMG_2298.JPG-800x800.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section content Careers -->
+          <section class="col_content-h full_screen-h">
+            <!-- <div class="bg_container-h">
+                        <img src="../images/home/background-2D2E30-1.jpg" alt="">
+                    </div> -->
+
+            <div
+              class="
+                fg_container-h
+                wrapper_content-h
+                row
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="text col-md-6">
+                <div class="title_bg_red-h">
+                  <p>CAREERS</p>
+                </div>
+                <div class="title_bg_white-h">
+                  <p>WE ARE HIRING</p>
+                </div>
+                <div class="box_info-h">
+                  <p>
+                    Pho is so much more than a bowl of noodle soup. It’s an
+                    obsession – the soul of a nation. Working at Pho is much the
+                    same. It’s more than a job, it’s a career. No experience
+                    needed, we'd love to hear from you!
+                  </p>
+                  <a href="" class="button-h">Learn More</a>
+                </div>
+              </div>
+              <div class="image col-md-6">
+                <div class="border-image">
+                  <img
+                    src="../images/home/Pho_Recruitment_SML-160-800x800.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section content Now Open -->
+          <section class="col_content-h full_screen-h">
+            <!-- <div class="bg_container-h">
+                        <img src="../images/home/Home-Background-2.jpg" alt="">
+                    </div> -->
+
+            <div
+              class="
+                fg_container-h
+                wrapper_content-h
+                row
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="text col-md-6">
+                <div class="title_bg_red-h">
+                  <p>Lincoln</p>
+                </div>
+                <div class="title_bg_white-h">
+                  <p>NOW OPEN!</p>
+                </div>
+                <div class="box_info-h">
+                  <p>
+                    We are now open in Lincoln's Cornhill Quarter. Book a table
+                    below or just come along - we'll save some tables for
+                    walk-in's.
+                  </p>
+                  <a href="" class="button-h">Book A Table</a>
+                </div>
+              </div>
+              <div class="image col-md-6">
+                <div class="border-image">
+                  <img
+                    src="../images/home/brisket-pho-soup-small-800x800.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section content Covid Policy -->
+          <section class="col_content-h full_screen-h">
+            <!-- <div class="bg_container-h">
+                        <img src="../images/home/Menu-Background.jpg" alt="">
+                    </div> -->
+
+            <div
+              class="
+                fg_container-h
+                wrapper_content-h
+                row
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="text col-md-6">
+                <div class="title_bg_red-h">
+                  <p>COVID-19 POLICY</p>
+                </div>
+                <div class="title_bg_white-h">
+                  <p>Keeping you safe</p>
+                </div>
+                <div class="box_info-h">
+                  <p>
+                    Information on how we're keeping our teams and our customers
+                    happy and safe during this time.
+                  </p>
+                  <a href="" class="button-h">COVID-19 POLICY</a>
+                </div>
+              </div>
+
+              <div class="image col-md-6">
+                <div class="border-image">
+                  <img
+                    src="../images/home/Pho_MealDeal_Oxford_1st_LRG-5.jpg-800x800.jpeg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Signup Form & Social Media -->
+          <div class="signup_social-h">
+            <div class="container-fluid wrapper_content-h">
+              <div class="row align-items-center">
+                <div class="signup-h col-md-6">
+                  <img
+                    src="../images/home/notepad (1).png"
+                    alt="Notepad illustration"
+                  />
+
+                  <form action="">
+                    <label for="EMAIL">NEWS AND OFFERS</label>
+                    <div class="">
+                      <input
+                        type="email"
+                        value=""
+                        class="input_email-h"
+                        placeholder="Email"
+                        required
+                      />
+                      <input
+                        type="submit"
+                        value="Submit"
+                        class="input_submit-h button-h"
+                      />
+                      <div class="checkbox_holder-h">
+                        <input
+                          type="checkbox"
+                          value=""
+                          name="PRIVACY"
+                          class="check_policy-h"
+                          required
+                        />
+                        <p>
+                          By signing up you are agreeing to receive marketing
+                          updates from Pho. You can find more information in our
+                          <a target="_blank" href="/privacy">Privacy Policy</a>
+                        </p>
+                      </div>
+                      <p class="error-h">Please agree to the privacy policy</p>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="social-h col-md-6">
+                  <h3>GET SOCIAL</h3>
+                  <ul>
+                    <li>
+                      <a href="" class="facebook"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="insta"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="snapchat"
+                        ><i class="fab fa-snapchat-ghost"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="youtube"
+                        ><i class="fab fa-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="twitter"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="">
+      <div class="wrapper_content-h">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gift vouchers</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright-h">© Copyright Pho 2021.</p>
+        <a class="product_link-h" href="">Website by F4.1 students</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/home.js"></script>
+  </body>
+</html>
