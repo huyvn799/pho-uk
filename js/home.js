@@ -3,18 +3,27 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
+    // $(".main_links-h").addClass("fixed-h");
+    $(".main_links-h").css("opacity", "1");
+    // $(".fixed-h.nav").css("z-index", "0");
+
+
     if (currentScrollPos === 0) {
       document.getElementById("pho_title-h").style.top = "165px";
       document.getElementById("pho_title-h").style.opacity = "1";
     }
   } else {
-
     document.getElementById("pho_title-h").style.top = "120px";
     document.getElementById("pho_title-h").style.opacity = "0";
+    // $(".main_links-h").removeClass("fixed-h");    
+    $(".main_links-h").css("opacity", "0");
+    // $(".fixed-h.nav").css("z-index", "-1");
   }
+ 
+  
   prevScrollpos = currentScrollPos;
 
-  console.log(`current scroll pos relative to edge window: ${currentScrollPos}`);
+  // console.log(`current scroll pos relative to edge window: ${currentScrollPos}`);
 
   var contentSections = $("section.col_content-h").toArray();
 
@@ -26,12 +35,12 @@ window.onscroll = function () {
     const offsetTop = contentSections[i].offsetTop;
 
     // lấy từ cạnh top của element so với cạnh top của window (sẽ thay đổi khi scroll)
-    console.log(`${i} bound top : ${boundTop} `);
+    // console.log(`${i} bound top : ${boundTop} `);
 
     // lấy từ cạnh top của element so với cạnh top của window (giá trị cứng) (ko sẽ thay đổi khi scroll)
-    console.log(`${i} offset top : ${offsetTop}`);
+    // console.log(`${i} offset top : ${offsetTop}`);
 
-    console.log(`${i} offset top - bound top : ${contentSections[0].offsetTop - boundTop}`);
+    // console.log(`${i} offset top - bound top : ${contentSections[0].offsetTop - boundTop}`);
 
     if (boundTop <= 630) {
 
@@ -53,6 +62,8 @@ window.onscroll = function () {
           break;
         }
       }
+
+      $(".background .background_image-h").css("top", `${-boundTop * 0.05}px`)
     } 
   }
 
