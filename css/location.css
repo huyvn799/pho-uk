@@ -1,3 +1,6 @@
+.location-search{
+  margin-top: 35vh;
+}
 .u__wrapper {
   max-width: 1230px;
   margin: 0 auto !important;
@@ -120,6 +123,9 @@
 }
 
 /* All- location */
+.all_location-cu{
+  display: none;
+}
 .all_location-cu li {
   margin: 20px 0;
   display: block;
@@ -169,4 +175,27 @@
 
 .location_item-cu a:hover img {
   transform: scale(1.2);
+}
+@media (max-width: 767px){
+.location-search .white-background p {
+    line-height: 1.2;
+    font-size: 60px;
+}
+.ls__input-wrapper input{
+  width: 260px;
+}
+}
+
+@media (max-width: 600px){
+.location-search .white-background p {
+    line-height: 1.2;
+    font-size: 32px;
+}
+.location-search__input .ls__view-all {
+  margin: 10px 26px;
+  width: 340px;
+}
+.location-search .location-search__input {
+  padding: 30px 0 0;
+}
 }
