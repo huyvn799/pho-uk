@@ -1,5 +1,6 @@
 // Transition "pho-title-logo" when scroll up or down
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
@@ -70,17 +71,15 @@ window.onscroll = function() {
             $(".background .background_image-h").css("top", `${-boundTop * 0.05}px`)
         }
     }
-
 }
-
 
 // Show header after loaded
 var header = document.querySelector("header");
-window.onunload = function() {
-    header.style.opacity = "0";
+window.onunload = function () {
+  header.style.opacity = "0";
 }
 
 // Click vào button open nav menu 
 $(".main_links-h a:last-child").click(function() {
-    $("#modal_nav_menu-h .nav_right-h").addClass("open_nav_menu-h");
+  $("#modal_nav_menu-h .nav_right-h").addClass("open_nav_menu-h");
 });

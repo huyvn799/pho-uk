@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balham Healthy Vietnamese food</title>
+    <!-- Icon FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bayon"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/kg-happy" rel="stylesheet" />
+    <link
+      href="http://fonts.cdnfonts.com/css/kg-tangled-up-in-you"
+      rel="stylesheet"
+    />
+
+    <!-- Carousel JQuery -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+
+    <!-- Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/balham.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container wrapper_content-h">
+        <div class="d-flex align-items-start justify-content-between">
+          <div class="logo-full" style="width: 75px; height: 164.028px">
+            <a href="">
+              <img class="logo-h" src="../images/home/logo.png" alt="" />
+              <img id="pho_title-h" src="../images/home/pho-title.png" alt="" />
+            </a>
+          </div>
+          <div class="center_links-h">
+            <a href="">MENU</a>
+            <a href="">LOCATIONS</a>
+            <a href="">OUR STORY</a>
+            <a href="">GET VOUCHERS</a>
+            <a href="">CAREERS</a>
+          </div>
+          <!-- <div class="main_links-h" style="width: 406px; height: 66px;"> -->
+          <div class="main_links-h">
+            <div class="fixed-h nav">
+              <a class="nav-link" href=""
+                ><i class="fas fa-shopping-bag"></i>Book a Table</a
+              >
+              <a
+                class="nav-link"
+                href=""
+                data-backdrop="false"
+                data-toggle="modal"
+                data-target="#modal_pho_to_go-h"
+              >
+                <i class="fas fa-map-marker-alt"></i>Pho To Go</a
+              >
+              <a
+                class="nav-link"
+                href=""
+                data-backdrop="false"
+                data-toggle="modal"
+                data-target="#modal_nav_menu-h"
+              >
+                <i class="fas fa-bars"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal Pho To Go in header  -->
+      <div class="modal fade" id="modal_pho_to_go-h">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+
+            <div class="modal-body row justify-content-center">
+              <a href="" class="button-h">Click & Collect</a>
+              <a href="" class="button-h">Delivery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav menu in header  -->
+      <div class="modal" id="modal_nav_menu-h">
+        <div class="nav_right-h row justify-content-center align-items-start">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <ul class="nav nav_menu-h">
+            <li class="nav-item">
+              <a class="nav-link" href="">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">LOCATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">PHO TO GO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">BOOKINGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="nav nav_social-h">
+            <li class="nav-item">
+              <a href="" class="nav-link facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link insta"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link snapchat"
+                ><i class="fab fa-snapchat-ghost"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav nav_footer-h">
+            <li class="nav-item">
+              <a class="nav-link" href="">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gift vouchers</a>
+            </li>
+          </ul>
+          <p class="copyright-h">© Copyright Pho 2021.</p>
+          <a class="product_link-h" href="">Website by F4.1 students</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="entire_body">
+      <div class="background">
+        <div class="background_color-h"></div>
+        <div class="background_image-h">
+          <img
+            src="../images/locations/balham/Home-Background-2-4F7E8D-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="background_gradient-h"></div>
+      </div>
+      <div class="foreground">
+        <main class="content">
+          <div class="front_page_gradient-h"></div>
+
+          <!-- Bắt đầu code -->
+          <div class="u__wrapper">
+            <section class="location-hero-slider">
+              <div class="slider-wrapper-cu col-12 u__imgBorder">
+                <img src="../images/locations/balham-800x800.jpg" alt="">
+                <div class="swipeEffect white-background">
+                  <p class="swipeEffect__text">Balham</p>
+                </div>
+                <div class="link-rows text-center">
+                  <a href="" class="button">Book A Table</a>
+                  <a href="" class="button">Menu</a>
+                  <a href="" class="button">Delivery</a>
+                  <a href="" class="button">Click & Collect</a>
+                </div>
+              </div>
+            </section>
+            <section class="location-contact">
+              <div class="row u__wrapper">
+                <div class="col-lg-7 col-md-12 contact-half">
+                  <div class="row contact-rows">
+                    <div class="col-5">
+                      <h2>Contact</h2>
+                      <div class="contact-details">
+                        <p>tel: 
+                          <a href="tel:02030 581 756" class="ajax__ignore">02030 581 756</a>
+                        </p>
+                        <a href="https://maps.google.com/?q=Pho,%2050-52%20Battersea%20RiseLondonSW11%201EG">50-52 Battersea Rise<br>
+                          London<br>
+                          SW11 1EG
+                        </a>
+                      </div>
+                      <a href="https://citymapper.com/directions?startcoord=51.46098509999999,-0.16553559999999834"
+                      class="button citymapper ajax__ignore">
+                      <i class="fas fa-map-marker"></i>
+                      Citymapper
+                      </a>
+                    </div>
+                    <div class="col-7">
+                      <h2>Opening Times</h2>
+                      <div class="contact-details">
+                        <p>Monday - Thursday: 12 - 10pm<br>
+                          Friday - Saturday: 12 - 10.30pm<br>
+                          Sunday: 12 - 9.30pm</p>
+                      </div>
+                      <div class="icons">
+                        <div>
+                          <i class="fas fa-wifi" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                         <i class="fas fa-child" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-5 map-half wow fadeInUp">
+                  <div class="map-wrapper u__imgBorder">
+                    <div id="js__location-single-map" data-lat="51.46098509999999" data-long="-0.16553559999999834">
+                      <a href="https://maps.google.com/?q=Pho,%2050-52%20Battersea%20RiseLondonSW11%201EG"
+                      class="ajax__ignore" target="_blank">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="location-blog">
+              <div class="row flex-md-row-reverse u__wrapper">
+                <div class="col-6 blog-half">
+                  <div class="blog-list__wrapper wow fadeIn">
+                    <img class="mailbox" src="https://www.phocafe.co.uk/wp-content/themes/pho-2018/library/images/mailbox.png" alt="inPho!">
+                    <div class="white-background">
+                      <p>inPho!</p>
+                    </div>
+                    <ul>
+                      <li><a href="https://www.phocafe.co.uk/gift-vouchers-available-now/"><h3>Gift vouchers available now!</h3></a></li>
+                      <li><a href="https://www.phocafe.co.uk/kids-love-noodles/"><h3>Kids love noodles!</h3></a></li>
+                      <li><a href="https://www.phocafe.co.uk/vegan-food-at-pho/"><h3>Vegan food at Pho</h3></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 image-half">
+                  <div class="image-wrapper d-none d-md-block u__imgBorder wow fadeIn">
+                    <div class="inner">
+                      <img src="https://www.phocafe.co.uk/wp-content/uploads/2018/07/Pho_MealDeal_Oxford_1st_LRG-5.jpg-1024x683.jpeg" alt="">
+                    </div>
+                  </div>
+                  <div class="white-background spotify-player-header">
+                    <p><img src="https://www.phocafe.co.uk/wp-content/themes/pho-2018/library/images/spotify.png" height="30px"> Restaurant Playlist</p>
+                  </div>
+                  <div class="spotify-qr">
+                    <a href="https://open.spotify.com/playlist/6xVj2UuxzKkVzwHuANQCuK?si=a69648e3a261482f&amp;nd=1" target="_blank" title="Listen to our playlist on Spotify">
+                      <img src="https://www.phocafe.co.uk/wp-content/themes/pho-2018/library/images/spotify-playlist-qr.png" alt="Scan this QR to view our Spotify playlist">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="location-newsletter">
+              <div class="row u__wrapper align-items-center">
+                <div class="col-lg-2 image-half">
+                  <img src="https://www.phocafe.co.uk/wp-content/themes/pho-2018/library/images/notepad.png" alt="Notepad illustration">
+                </div>
+                <div class="col-lg-10 form-half">
+                  <div class="lnewsletter__inner">
+                    <form action="" class="row text-center align-items-center">
+                      <div class="col-2 lnewsletter-column">
+                        <h3>SIGN UP</h3>
+                      </div>
+                      <div class="col-2 lnewsletter-column">
+                        <input id="restaurant__mailing-list__name" type="text" value="" name="FNAME" placeholder="Name" class="input-box">
+                      </div>
+                      <div class="col-2 lnewsletter-column">
+                        <input id="restaurant__mailing-list__email" type="email" value="" name="EMAIL" placeholder="Email" required="" class="input-box">
+                      </div>
+                      <div class="lnewsletter-column">
+                        <select name="FAVPHO">
+                          <option value="Balham">Balham</option>        
+                        </select>
+                      </div>
+                      <div class="col-2 lnewsletter-column">
+                        <input type="submit" value="Submit" name="subscribe" id="restaurant__mailing-list__submit" class="button">
+                      </div>
+                    </form>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="checkbox_holder">
+                          <input type="checkbox" name="" id="">
+                          <p>By signing up you are agreeing to receive marketing updates from Pho. You can find more information in our <a target="_blank" href="/privacy-policy">Privacy Policy</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="location-instagram">
+              <div class="row u__wrapper">
+                <div class="col-md-4 even">
+                  <div class="image-wrapper u__imgBorder">
+                    <div class="inner">
+                      <a href="http://instagram.com/phorestaurant">
+                        <i class="fab fa-instagram"></i>
+                      <img src="../images/locations/balham/location-single4.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 odd">
+                  <div class="image-wrapper u__imgBorder">
+                    <div class="inner">
+                      <a href="http://instagram.com/phorestaurant">
+                        <i class="fab fa-instagram"></i>
+                      <img src="../images/locations/balham/location-single6.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- Kết thúc -->
+          <!-- Signup Form & Social Media -->
+          <div class="signup_social-h">
+            <div class="container-fluid wrapper_content-h">
+              <div class="row align-items-center">
+                <div class="signup-h col-md-6">
+                  <img
+                    src="../images/home/notepad (1).png"
+                    alt="Notepad illustration"
+                  />
+
+                  <form action="">
+                    <label for="EMAIL">NEWS AND OFFERS</label>
+                    <div class="">
+                      <input
+                        type="email"
+                        value=""
+                        class="input_email-h"
+                        placeholder="Email"
+                        required
+                      />
+                      <input
+                        type="submit"
+                        value="Submit"
+                        class="input_submit-h button-h"
+                      />
+                      <div class="checkbox_holder-h">
+                        <input
+                          type="checkbox"
+                          value=""
+                          name="PRIVACY"
+                          class="check_policy-h"
+                          required
+                        />
+                        <p>
+                          By signing up you are agreeing to receive marketing
+                          updates from Pho. You can find more information in our
+                          <a target="_blank" href="/privacy">Privacy Policy</a>
+                        </p>
+                      </div>
+                      <p class="error-h">Please agree to the privacy policy</p>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="social-h col-md-6">
+                  <h3>GET SOCIAL</h3>
+                  <ul>
+                    <li>
+                      <a href="" class="facebook"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="insta"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="snapchat"
+                        ><i class="fab fa-snapchat-ghost"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="youtube"
+                        ><i class="fab fa-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="twitter"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- End location site wrapper -->
+    <footer class="">
+      <div class="wrapper_content-h">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gift vouchers</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright-h">© Copyright Pho 2021.</p>
+        <a class="product_link-h" href="">Website by F4.1 students</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>
