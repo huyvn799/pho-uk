@@ -8,7 +8,7 @@ body {
 
 .benefit {
     margin-top: 16%;
-    border: red 3px solid;
+    /* border: red 3px solid; */
 }
 
 .ben-title {
@@ -35,7 +35,7 @@ body {
 .ben-detail {
     width: 80%;
     margin: 4% auto;
-    border: springgreen solid 3px;
+    /* border: springgreen solid 3px; */
 }
 
 .ben-image img {

@@ -190,7 +190,7 @@
                                     <p>Working at Pho is much the same. It’s more than a job, it’s a career. We take the work as seriously as the pho and we love it. We offer complete training programmes, fantastic pay, bonus schemes, amazing staff parties,
                                         lots of pho and incredible opportunities for growth and progression, in the kitchen and on the floor.</p><br>
                                     <p>Read more about our <a class="pink-text hover-underline" href="../html/benefit.html">benefits here</a>.</p><br>
-                                    <p>Whatever the role you are looking for, join the Pho family and become part of our national obsession and we’ll tailor your career to suit you.</p><br><br><br>
+                                    <p>Whatever the role you are looking for, join the Pho family and become part of our national obsession and we’ll tailor your career to suit you.</p><br><br>
                                     <a href="../html/vacancies.html" target="_blank" class="view-vac">View Vacancies</a>
                                 </div>
                             </div>
@@ -349,7 +349,9 @@
             <a class="product_link-h" href="">Website by F4.1 students</a>
         </div>
     </footer>
-
+    <div id="backtop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <!-- Bootstrap 4 JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -360,5 +362,23 @@
 
     <script src="../js/home.js"></script>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $('#backtop').click(function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 400);
+        });
+    });
+</script>
 
 </html>

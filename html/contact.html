@@ -25,6 +25,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/home-anh.css">
     <link rel="stylesheet" href="../css/careers.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/grid.css">
 </head>
 
@@ -158,7 +159,7 @@
 
 
                 <!-- Mọi người hãy code ở đây nhé -->
-                <div class="">
+                <div class="contact">
                     <div class="feedback white-bg">
                         <h1 class="kghappy">Feedback</h1>
                     </div>
@@ -168,8 +169,8 @@
                             <p>Dined with us recently? Fill out our 2-minute survey below.</p><br>
                             <div class="pink-text hover-unlder"></div>
                             <a href="" class="view-vac">Take Survey</a><br><br>
-                            <p>Got something you'd like to say about your experience at Pho? Whether it's something you enjoyed, or something you think we could improve, let us know here or email us at</p>
-                            <a class="pink-text hover-underline" href="">hellopho@phocafe.co.uk</a><br><br>
+                            <p>Got something you'd like to say about your experience at Pho? Whether it's something you enjoyed, or something you think we could improve, let us know here or email us at <a class="pink-text hover-underline email" href="">hellopho@phocafe.co.uk</a></p>
+                            <br><br>
                             <form action="">
                                 <div class="row input-contact">
                                     <div class="col-md-6 contact-item">
@@ -209,8 +210,8 @@
                         <div class="fbright white-bg">
                             <h4>Pho Head Office, 15 Clerkenwell Green, London, EC1R 0DP</h4><br>
                             <p>If you’d like to join the team at Pho, check out our jobs page <a class="pink-text hover-underline" href="">here.</a></p>
-                            <p>For any press enquiries please email</p>
-                            <a type="mail" class="pink-text hover-underline" href="">libby@phocafe.co.uk.</a>
+                            <p>For any press enquiries please email <a type="mail" class="pink-text hover-underline email" href="">libby@phocafe.co.uk.</a></p>
+
                             <br><br>
                             <h4>Get in touch</h4><br>
                             <p>If you have an enquiry about booking a table, allergens in our food or dietary requirements, please see our <a href="" class="pink-text hover-underline">FAQ’s</a>.
@@ -300,7 +301,9 @@
             <a class="product_link-h" href="">Website by F4.1 students</a>
         </div>
     </footer>
-
+    <div id="backtop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <!-- Bootstrap 4 JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -311,5 +314,23 @@
 
     <script src="../js/home.js"></script>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $('#backtop').click(function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 400);
+        });
+    });
+</script>
 
 </html>
