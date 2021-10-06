@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phở Việt tại Anh Quốc</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/careers.css">
+    <link href="http://fonts.cdnfonts.com/css/kg-happy" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
+</head>
+
+<body>
+    <div class="full-screen">
+        <div class="vacancies p1">
+            <div class="p1-content">
+                <div class="logo">
+                    <a href="../html/vacancies.html" class=""><img src="../images/careers/Pho_Logo_RGB-2554550.jpg" alt=""></a>
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://www.facebook.com/PhoRestaurant"><i class="fab fa-facebook-square vacancies-color"></i></a>
+                    <a target="_blank" href="https://twitter.com/PhoRestaurant"><i class="fab fa-twitter-square vacancies-color"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/phorestaurant/"><i class="fab fa-instagram-square vacancies-color"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCGDqcT-lxY5urJTYqTszALw"><i class="fab fa-youtube-square vacancies-color"></i></a>
+                    <a target="_blank" href="https://www.snapchat.com/add/phorestaurant"><i class="fab fa-snapchat-square vacancies-color"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="vacancies p2 center">
+            <video autoplay muted loop id="myvideo">
+                    <source src="../images/careers/pho-recruitment-career.mp4">
+                </video>
+            <div class="p2-content">
+                <a class="vac-btn kghappy" href="">OUR JOBS</a>
+            </div>
+
+        </div>
+        <div class="vacancies p3">
+            <h1 class="center gray-text">OUR STORY</h1>
+            <p class="p3-detail center gray-text">Stephen and Juliette Wall opened Pho in June 2005 after they travelled to Vietnam and fell in love with the food. They made the decision to start a restaurant serving phở while sat on high stools, slurping pho bo, in Ho Chi Minh City. Till
+                this day, Pho is still a family-run business serving great value, healthy Vietnamese street food that is cooked fresh daily (no central kitchens!).</p><br><br>
+            <div class="p3-content">
+                <a class="vac-btn kghappy" href="">APPLY NOW</a>
+            </div><br><br>
+        </div>
+        <div class="vacancies p4 ">
+            <div class="p4-content">
+                <h1 class="center">MISSION & CULTURE</h1>
+                <div class="p4-detail">
+                    <p>We are not a corporate chain –we are a family run business and personality measure everything we do, from the food we cook fresh each site every day, to the teams employ, to the way we engage with our customers.</p>
+                    <br>
+                    <p>We do not employ robots. Our people are down to earth, passionate about food, humble, honest, genuine and enthusiastic. They can’t work to have fun.</p>
+                    <br>
+                    <p>We exist to create Pho-natics - passionate, engaged, addicted and devoted customers, waiters, chefs, managers and more.</p>
+                </div>
+            </div>
+            <div class="p4-content center">
+                <img src="../images/careers/Our_Mission-pg8-withBG-3649110.png" alt="">
+            </div>
+        </div>
+        <div class="vacancies p5">
+            <div class="p5-content center">
+                <img src="../images/careers/The_Perks-pg21-withBG-3585561.png" alt="">
+            </div>
+            <div class="p5-content">
+                <h1 class="center">BENEFIT</h1>
+                <ul class="p5-detail">
+                    <li>Pho-nomenal Benefits Platform: Access to 1000’s of exclusive discounts on supermarket shops, high-street stores, restaurant and travel!</li>
+                    <li>Competitive pay</li>
+                    <li>A fantastic environment to drive your career forward</li>
+                    <li>Complete training program</li>
+                    <li>Bonus schemes</li>
+                    <li>Amazing staff parties</li>
+                    <li>Free meals</li>
+                    <li>Pension scheme</li>
+                    <li>50% discount on food & drink in our restaurants</li>
+                    <li>28 days paid holiday</li>
+                    <li>Employee Assistance Programme (Hospitality Action)</li>
+                    <li>Free financial wellbeing tools and advice</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vacancies p6 center">
+            <img src="../images/careers/Our_Values-pg9-3585560.png" alt="">
+        </div>
+        <div class="vacancies p7 center">
+            <img src="../images/careers/The_Phomily-pg2425-withBG-3585563.png" alt="">
+        </div>
+        <div class="vacancies p8 center">
+            <img src="../images/careers/Powered_by_Harri-8430267-transparent-5315339.png" alt="">
+        </div>
+        <div id="backtop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $('#backtop').click(function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 400);
+        });
+    });
+</script>
+
+</html>

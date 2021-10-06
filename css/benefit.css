@@ -1,0 +1,54 @@
+body {
+    background-image: url(../images/careers/Benefit-Background.jpg);
+}
+
+.orange-text {
+    color: red;
+}
+
+.benefit {
+    margin-top: 16%;
+    border: red 3px solid;
+}
+
+.ben-title {
+    width: 100%;
+    margin: 0 auto;
+    /* border: olivedrab 1px solid; */
+}
+
+.ben-title h1 {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 80px;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.ben-content {
+    padding: 1% 4%;
+    background-color: white;
+}
+
+.ben-detail {
+    width: 80%;
+    margin: 4% auto;
+    border: springgreen solid 3px;
+}
+
+.ben-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .ben-image,
+    .ben-detail {
+        width: 100%;
+    }
+    .ben-title h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,62 @@
+/* feedback */
+
+.fbcontainer {
+    width: 100%;
+    display: flex;
+    /* border: royalblue solid 3px; */
+    margin-top: 6%;
+    justify-content: space-evenly;
+}
+
+.feedback {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: olivedrab 1px solid; */
+    margin-top: 15%;
+}
+
+.feedback h1 {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 60px;
+}
+
+.fbleft,
+.fbright {
+    width: 50%;
+    padding: 3%;
+    /* border: olivedrab 3px solid; */
+}
+
+
+/* contact */
+
+.input-contact {
+    width: 100%;
+    height: auto;
+}
+
+.contact-item input,
+.contact-item select,
+.contact-item textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    padding: 4% 10%;
+    background-color: #E21837;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
