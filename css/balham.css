@@ -1,6 +1,12 @@
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Common */
 /* Site balham */
 .location-hero-slider{
+    margin-top: 200px;
 }
 .slider-wrapper-cu{
     
@@ -33,7 +39,10 @@
 .slider-wrapper-cu .link-rows{
     position: absolute;
     bottom: 30%;
-    width: 100%;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 .link-rows .button{
@@ -45,6 +54,7 @@
     line-height: 26px;
     letter-spacing: .35px;
     font-family: 'KG HAPPY Solid', sans-serif;
+    margin: 2px;
 }
 .link-rows a{
     text-decoration: none;
@@ -56,7 +66,7 @@
     padding: 50px 0;
 }
 .location-contact .contact-half {
-    padding-right: 60px;
+    /* padding-right: 60px; */
 }
 .location-contact .contact-rows {
     background-color: #fff;
@@ -315,4 +325,54 @@
 }
 .checkbox_holder a {
     color: #E21837;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .blog-half {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 20px;
+    }
+
+    .location-blog .blog-half {
+        padding-left: 15px;
+    }
+
+    
+}
+
+@media (max-width: 820px) {
+    .form-half {
+        padding-right: 15px;
+    }
+
+    .location-newsletter .lnewsletter__inner .lnewsletter-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .location-hero-slider {
+        margin-top: 50px;
+    }
+
+    .location-contact .contact-rows .col-5,
+    .location-contact .contact-rows .col-7 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .spotify-player-header p {
+        font-size: 20px;
+    }
+
+    .location-newsletter .image-half {
+        display: none;
+    }
+
+    .location-instagram .col-md-4 {
+        margin-bottom: 5px;
+    }
 }

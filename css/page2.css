@@ -277,6 +277,20 @@ h6 {
   transition: all 0.5s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .content-ch {
+    margin: 150px auto 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .quantity {
+    float: none;
+    margin: 0 auto;
+    width: 78%;
+  }
+}
+
 @media (max-width: 480px) {
   .woocommerce-product-ch {
     width: initial;

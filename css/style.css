@@ -161,19 +161,25 @@
     background-color: transparent !important;
   }
 }
-/* @media (min-width: 701px){
-    .swipeEffect.is-active .swipeEffect__revealer {
-    animation: 0.95s cubic-bezier(0.86, 0, 0.07, 1) 0s 1 normal both running swipe-right;
-    background-color: rgb(255, 255, 255) !important;
-}
-} */
 
 @media (max-width: 600px) {
   .about-header .white-background p {
     font-size: 50px;
   }
 
+  .about-row {
+    padding: 50px;
+  }
+
   .about-row .image-wrapper {
     position: static;
-}
+  }
+
+  .about-header {
+    padding: 200px 0 30px;
+  }
+
+  .signup_social-h {
+    padding-top: 100px;
+  }
 }

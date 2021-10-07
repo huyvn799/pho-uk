@@ -1,5 +1,10 @@
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .location-search{
-  margin-top: 35vh;
+  margin-top: 200px;
 }
 .u__wrapper {
   max-width: 1230px;
@@ -82,6 +87,7 @@
   line-height: 24px;
   -webkit-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
+  cursor: pointer;
 }
 .location-search__input .ls__view-all:hover{
   background-color: #e21837;
@@ -126,6 +132,7 @@
 .all_location-cu{
   display: none;
 }
+
 .all_location-cu li {
   margin: 20px 0;
   display: block;
@@ -184,6 +191,8 @@
 .ls__input-wrapper input{
   width: 260px;
 }
+
+
 }
 
 @media (max-width: 600px){

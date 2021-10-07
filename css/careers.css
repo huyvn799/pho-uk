@@ -78,7 +78,7 @@ body {
 }
 
 .container.con1 {
-    margin-top: 15%;
+    margin-top: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -631,7 +631,7 @@ body {
         max-width: 100%;
     }
     .contact div h1 {
-        font-size: 200%;
+        font-size: 40px;
         width: 90%;
         margin: 0 auto;
     }
@@ -713,4 +713,10 @@ body {
     }
     /* vacancies */
     /* contact */
+}
+
+@media (max-width: 600px) {
+    .selector a {
+        padding: 10px;
+    }
 }

@@ -25,307 +25,122 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container wrapper_content-h">
-            <div class="d-flex align-items-start justify-content-between">
-                <div class="logo-full" style="width: 75px; height: 164.028px;">
-                    <a href="">
-                        <img class="logo-h" src="../images/home/logo.png" alt="">
-                        <img id="pho_title-h" src="../images/home/pho-title.png" alt="">
-                    </a>
-                </div>
-                <div class="center_links-h">
-                    <a href="">MENU</a>
-                    <a href="">LOCATIONS</a>
-                    <a href="">OUR STORY</a>
-                    <a href="">GET VOUCHERS</a>
-                    <a href="">CAREERS</a>
-                </div>
-                <!-- <div class="main_links-h" style="width: 406px; height: 66px;"> -->
-                <div class="main_links-h">
-                    <div class="fixed-h nav">
-                        <a class="nav-link" href=""><i class="fas fa-shopping-bag"></i>Book a Table</a>
-                        <a class="nav-link" href="" data-backdrop="false" data-toggle="modal"
-                            data-target="#modal_pho_to_go-h">
-                            <i class="fas fa-map-marker-alt"></i>Pho To Go</a>
-                        <a class="nav-link" href="" data-backdrop="false" data-toggle="modal"
-                            data-target="#modal_nav_menu-h">
-                            <i class="fas fa-bars"></i></a>
-                    </div>
+    <div class="container wrapper_content-h">
+        <div class="d-flex align-items-start justify-content-between">
+            <div class="logo-full" style="width: 75px; height: 164.028px;">
+                <a href="../">
+                    <img class="logo-h" src="../images/home/logo.png" alt="">
+                    <img id="pho_title-h" src="../images/home/pho-title.png" alt="">
+                </a>
+            </div>
+            <div class="center_links-h">
+                <a href="./menu.html">MENU</a>
+                <a href="./location.html">LOCATIONS</a>
+                <a href="./our_story.html">OUR STORY</a>
+                <a href="./gift_vouchers.html">GET VOUCHERS</a>
+                <a href="./careers.html">CAREERS</a>
+            </div>
+            <!-- <div class="main_links-h" style="width: 406px; height: 66px;"> -->
+            <div class="main_links-h">    
+                <div class="fixed-h nav">
+                    <a class="nav-link" href="./location.html"><i class="fas fa-shopping-bag"></i>Book a Table</a>
+                    <a class="nav-link" href="javascript:void(0)" data-backdrop="false" data-toggle="modal" data-target="#modal_pho_to_go-h">
+                        <i class="fas fa-map-marker-alt"></i>Pho To Go</a>
+                    <a class="nav-link" href="javascript:void(0)" data-backdrop="false" data-toggle="modal" data-target="#modal_nav_menu-h">
+                        <i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
-    
-        <!-- The Modal Pho To Go in header  -->
-        <div class="modal fade" id="modal_pho_to_go-h">
-    
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    
-                    <div class="modal-body row justify-content-center">
-                        <a href="" class="button-h">Click & Collect</a>
-                        <a href="" class="button-h">Delivery</a>
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-    
-        <!-- Nav menu in header  -->
-        <div class="modal" id="modal_nav_menu-h">
-    
-            <div class="nav_right-h row justify-content-center align-items-start">
+    </div>
+
+    <!-- The Modal Pho To Go in header  -->
+    <div class="modal fade" id="modal_pho_to_go-h">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <ul class="nav nav_menu-h">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">LOCATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">OUR STORY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">PHO TO GO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">BOOKINGS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CONTACT</a>
-                    </li>
-                </ul>
-                <ul class="nav nav_social-h">
-                    <li class="nav-item">
-                        <a href="" class="nav-link facebook"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link insta"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link snapchat"><i class="fab fa-snapchat-ghost"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link youtube"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link twitter"><i class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-                <ul class="nav nav_footer-h">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Gift vouchers</a>
-                    </li>
-                </ul>
-                <p class="copyright-h">© Copyright Pho 2021.</p>
-                <a class="product_link-h" href="">Website by F4.1 students</a>
+
+                <div class="modal-body row justify-content-center">
+                    <a href="javascript:void(0)" class="button-h">Click & Collect</a>
+                    <a href="javascript:void(0)" class="button-h">Delivery</a>
+                </div>
+
             </div>
         </div>
+    </div>
+
+    <!-- Nav menu in header  -->
+    <div class="modal" id="modal_nav_menu-h">
+
+        <div class="nav_right-h row justify-content-center align-items-start">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <ul class="nav nav_menu-h">
+                <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./location.html">LOCATIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./our_story.html">OUR STORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" data-backdrop="false" data-dismiss="modal" data-toggle="modal" data-target="#modal_pho_to_go-h">PHO TO GO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./location.html">BOOKINGS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./careers.html">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="nav nav_social-h">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link facebook"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link insta"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+            <ul class="nav nav_footer-h">
+                <li class="nav-item">
+                    <a class="nav-link" href="./careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gift_vouchers.html">Gift vouchers</a>
+                </li>
+            </ul>
+            <p class="copyright-h">© Copyright Pho 2021.</p>
+            <a class="product_link-h" href="javascript:void(0)">Website by F4.1 students</a>
+        </div>
+    </div>
     </header>
 
-    <!-- <div id="primary-ch" class="content-ch ">
-        <div class="product-ch">
-            <div class="woocommerce-product-ch">
-                <figure class="woocommerce-product-gallery__wrapper">
-                    <div data-thumb="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-100x100.jpeg"
-                        data-thumb-alt="" class="woocommerce-product-gallery__image"><a
-                            href="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-scaled.jpeg"><img
-                                width="416" height="278"
-                                src="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-416x278.jpeg"
-                                class="wp-post-image" alt="" loading="lazy" title="Pho_Spitalfields_09_04_2018_LRG-14.jpg"
-                                data-caption=""
-                                data-src="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-scaled.jpeg"
-                                data-large_image="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-scaled.jpeg"
-                                data-large_image_width="2560" data-large_image_height="1708"
-                                srcset="https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-416x278.jpeg 416w, https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-300x200.jpeg 300w, https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-1024x683.jpeg 1024w, https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-768x513.jpeg 768w, https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-1536x1025.jpeg 1536w, https://shop.phocafe.co.uk/wp-content/uploads/2020/10/Pho_Spitalfields_09_04_2018_LRG-14.jpg-2048x1367.jpeg 2048w"
-                                sizes="(max-width: 416px) 100vw, 416px"></a></div>
-                </figure>
-            </div>
-            <div class="summary">
-                <h1 class="product_title-ch entry-title-ch">Gift voucher</h1>
-                <p class="price-ch"><span class="woocommerce-Price-amount-ch amount-ch"><bdi><span
-                                class="woocommerce-Price-currencySymbol-ch">£</span>20.00</bdi></span></p>
-                <form class="cart" action="https://shop.phocafe.co.uk/product/gift-card-20/" method="post"
-                    enctype="multipart/form-data">
-                    <div class="ig-service_type-field">
-                        <input type="hidden" id="rudzzz-service_type" class="rudzzz-service_type" name="rudzzz-service_type"
-                            value="Gift Voucher">
-                
-                        <input type="hidden" id="rudzzz-location_id" class="rudzzz-location_id" name="rudzzz-location_id" value="">
-                
-                    </div>
-                    <div class="ig-engraving-field" style="width:100%;">
-                        <input type="hidden" id="kitchen-request" name="kitchen-request" placeholder="Special kitchen request"
-                            maxlength="30">
-                    </div>
-                
-                
-                    <div class="gift_card_gifting_type_container" style="width:100%; display:none;">
-                
-                        <label for="gift_card_type">Select Type</label>
-                        <select id="gift_card_type" name="gift_card_type">
-                
-                
-                            <option value="digital">Digital</option>
-                
-                        </select>
-                    </div>
-                
-                
-                    <div class="gift_card_gifting_check_container" style="width:100%;">
-                        <input type="checkbox" class="form-check-input" id="gift_card_gifting_check">
-                        <label for="gift_card_gifting_check">Send as a gift?</label>
-                    </div>
-                
-                
-                    <div class="digital_gift_fields_container" style="display:none;">
-                
-                        <div class="gift_field_container" style="width:100%;">
-                            <label for="gift_email_address">Email Address</label>
-                            <input type="text" id="gift_email_address" name="gift_email_address" placeholder="" maxlength="100">
-                        </div>
-                
-                    </div>
-                
-                
-                    <div class="physical_gift_fields_container" style="display:none;">
-                
-                        <div class="gift_field_container" style="width:100%;">
-                            <label for="gift_name">Enter Name</label>
-                            <input type="text" id="gift_name" name="gift_name" placeholder="" maxlength="100">
-                        </div>
-                
-                        <div class="gift_field_container" style="width:100%;">
-                            <label for="gift_address">Enter full address</label>
-                            <textarea id="gift_address" name="gift_address"></textarea>
-                        </div>
-                
-                    </div>
-                
-                
-                    <div class="gift_message_container hidden" style="width:100%; display:none;">
-                        <label for="gift_message">Gift Message (optional) - <span id="remain">300</span> characters remaining</label>
-                        <textarea id="gift_message" name="gift_message"></textarea>
-                
-                        <div id="gift_message_char_limit" style="display:none;">300</div>
-                    </div>
-                
-                
-                    <div class="quantity">
-                
-                        
-                        <button type="button" class="minus" style="float: none;margin: 0;display: inline-block;"><i
-                                class="fas fa-minus-circle"></i></button>
-                
-                        <input class="qty" name="quantity" value="1" max="20" min="1" step="1">
-                        
-                        <button type="button" class="plus" style="float: none;margin: 0;display: inline-block;"><i
-                                class="fas fa-plus-circle"></i></button>
-                
-                    </div>
-                    <button type="submit" name="add-to-cart" value="1288" class="single_add_to_cart_button button alt">Add to
-                        basket</button>
-                
-                </form>
-            </div>
-            <div class="acordian-container summary entry-summary">
-                <div class="summary entry-summary acordian-item information acordian-active">
-                    <h2 class="tab-heading">Information
-                        <div class="chevron-wrap">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.437 407.437"
-                                style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve">
-                                <polygon
-                                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 ">
-                                </polygon>
-                                <g></g>
-                            </svg>
-                        </div>
-                    </h2>
-            
-                    <div class="tab-content">
-                        You are purchasing a digital gift voucher. A unique, one-time use code will be e-mailed to the gift receiver
-                        (if an email address is provided) as well as the purchaser (as a receipt). If you wish to purchase a voucher
-                        and send it on to the receiver yourself, do not click the ‘send as a gift’ option. <br>
-                        <br>
-                        The code can be redeemed at any Pho restaurant for the value of the voucher purchased before it expires on
-                        31/12/22 (terms and conditions apply). <br>
-                        <br>
-                        The entire value of the voucher must be used when it is redeemed. No change will be given and no remaining
-                        balance will remain, nor future credit given. We will accept multiple voucher codes in one purchase, as long
-                        as they are valid.
-                    </div>
-                </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                <div class="summary entry-summary extra-desc acordian-item terms acordian-active">
-            
-                    <h2 class="tab-heading">Terms &amp; Conditions
-                        <div class="chevron-wrap">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.437 407.437"
-                                style="enable-background:new 0 0 407.437 407.437;" xml:space="preserve">
-                                <polygon
-                                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 ">
-                                </polygon>
-                                <g></g>
-                            </svg>
-                        </div>
-                    </h2>
-            
-            
-                    <div class="tab-content">
-                        Pho gift vouchers can be redeemed in any Pho restaurant for dining in or takeaway when the financial
-                        transaction is made inside the restaurant. (not valid on Deliveroo or via click and collect). <br>
-                        <br>
-                        The value of the individual voucher code must be used in full – no change will be given and no remaining
-                        balance will remain, nor future credit given. You may use multiple voucher codes in one purchase, as long as
-                        they are valid. <br>
-                        <br>
-                        The voucher code is not for re-sale and cannot be exchanged for any cash alternative. Pho cannot accept
-                        responsibility if your voucher is lost, stolen, damaged or unused. It will not be replaced or its value
-                        refunded in any of these circumstances.<br>
-                        <br>
-                        Vouchers purchased before 31/12/2021 will expire on 31/12/2022. <br>
-                        <br>
-                        If you have any queries or issues with your voucher, firstly please check your confirmation email to ensure
-                        all details are correct. Occasionally our vouchers filter into junk mail so please check for any emails from
-                        hellopho@phocafe.co.uk.
-                    </div>
-            
-                </div>
-            
-            
-            </div>
-        </div>
-    </div> -->
-
+    
     <div class="entire_body">
         <div class="background">
             <div class="background_color-h"></div>
-            <div class="background_image-h"> -->
+            <div class="background_image-h">
     
                 <!-- Mọi người thay src bằng background của mình -->
                 <img src="https://fusepho.wpengine.com/wp-content/uploads/2020/10/background-2D2E30-1.jpg" alt="">
@@ -362,7 +177,7 @@
                             <h1 class="product_title-ch entry-title-ch">Gift voucher</h1>
                             <p class="price-ch"><span class="woocommerce-Price-amount-ch amount-ch"><bdi><span
                                             class="woocommerce-Price-currencySymbol-ch">£</span>20.00</bdi></span></p>
-                            <form class="cart" action="https://shop.phocafe.co.uk/product/gift-card-20/" method="post"
+                            <form class="cart" action="" method=""
                                 enctype="multipart/form-data">
                                 <div class="ig-service_type-field">
                                     <input type="hidden" id="rudzzz-service_type" class="rudzzz-service_type" name="rudzzz-service_type"
@@ -482,16 +297,7 @@
                                     as they are valid.
                                 </div>
                             </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                  
                             <div class="summary entry-summary extra-desc acordian-item terms acordian-active">
                 
                                 <h2 class="tab-heading">Terms &amp; Conditions
@@ -534,8 +340,7 @@
                                 </div>
                 
                             </div>
-                
-                
+                    
                         </div>
                     </div>
                 </div>
@@ -544,32 +349,30 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="">
         <div class="wrapper_content-h">
             <nav>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Careers</a>
+                        <a class="nav-link" href="./careers.html">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">FAQs</a>
+                        <a class="nav-link" href="javascript:void(0)">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Privacy</a>
+                        <a class="nav-link" href="javascript:void(0)">Privacy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Gift vouchers</a>
+                        <a class="nav-link" href="./gift_vouchers.html">Gift vouchers</a>
                     </li>
                 </ul>
             </nav>
             <p class="copyright-h">© Copyright Pho 2021.</p>
-            <a class="product_link-h" href="">Website by F4.1 students</a>
+            <a class="product_link-h" href="javascript:void(0)">Website by F4.1 students</a>
         </div>
     </footer>
-    
-    
-    
-    
+     
     <!-- Bootstrap 4 JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

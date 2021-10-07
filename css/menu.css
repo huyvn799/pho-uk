@@ -568,7 +568,7 @@ main .text_columns-h {
     background-color: #000;
     text-align: center;
     padding: 10px;
-    /* display: none; */
+    display: none;
 }
 
 
@@ -781,6 +781,7 @@ main .text_columns-h {
     line-height: 18px;
     font-family: 'KG Happy Solid';
     transition: all .25s ease;
+    margin: 5px 0;
 }
 
 /* Signup and Social */

@@ -4,21 +4,18 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        // $(".main_links-h").addClass("fixed-h");
+        $(".logo-full .logo-h").css("opacity", "1");
         $(".main_links-h").css("opacity", "1");
-        // $(".fixed-h.nav").css("z-index", "0");
-
-
+        
         if (currentScrollPos === 0) {
             document.getElementById("pho_title-h").style.top = "165px";
             document.getElementById("pho_title-h").style.opacity = "1";
         }
     } else {
         document.getElementById("pho_title-h").style.top = "120px";
-        document.getElementById("pho_title-h").style.opacity = "0";
-        // $(".main_links-h").removeClass("fixed-h");    
+        document.getElementById("pho_title-h").style.opacity = "0";    
+        $(".logo-full .logo-h").css("opacity", "0");
         $(".main_links-h").css("opacity", "0");
-        // $(".fixed-h.nav").css("z-index", "-1");
     }
 
 
@@ -68,7 +65,7 @@ window.onscroll = function() {
                     }
             }
 
-            $(".background .background_image-h").css("top", `${-boundTop * 0.05}px`)
+            $(".background .background_image-h").css("top", `${-boundTop * 0.03}px`)
         }
     }
 }

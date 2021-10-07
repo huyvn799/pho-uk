@@ -120,6 +120,20 @@ bdi {
 
 /* Responsive */
 @media (max-width: 600px) {
+  
+  .center-ch {
+    margin-top: 150px;
+  }  
+
+  .gif-intro-ch .copy-ch {
+    font-size: 16px;
+    height: 300px;
+  }
+
+  .gif-intro-ch h2 {
+    font-size: 34px;
+  }
+
   .gif-intro-ch .row {
     margin-left: 0;
     margin-right: 0;
@@ -128,5 +142,10 @@ bdi {
   .Gereg-ch.row {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .Gereg-ch.row .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
