@@ -13,3 +13,12 @@
     src: url(../fonts/KGHAPPYShadows.ttf);
 }
 
+@font-face {
+    font-family: 'KG Tangled Up In You';
+    src: url(../fonts/KGTangledUpInYou.ttf);
+}
+
+@font-face {
+    font-family: 'KG Tangled Up In You 2';
+    src: url(../fonts/KGTangledUpInYou2.ttf);
+}
