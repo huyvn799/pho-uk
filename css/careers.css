@@ -116,19 +116,31 @@ body {
     margin-top: 10%;
     height: auto;
     font-size: 65px;
+    /* animation: leftToRight 1s linear;
+    float: left; */
     /* border: rgb(238, 23, 23) solid 1px; */
 }
+
+
+/* @keyframes leftToRight {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+} */
 
 .left {
     /* border: rgb(41, 179, 48) 2px solid; */
     height: 350px;
-    width: 50%;
+    width: 100%;
 }
 
 .right {
     /* border: yellow 2px solid; */
     height: 350px;
-    width: 50%;
+    width: 100%;
 }
 
 .video video {
