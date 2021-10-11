@@ -482,15 +482,15 @@ menuMobile.addEventListener("change", function() {
             break;
         }
 
-        case 'phoes': {
+        case 'pho': {
             this.classList.add("active");
 
-            for (var i = 0; i < phoes.length; i++) {
+            for (var i = 0; i < pho.length; i++) {
                 rowListItem.innerHTML += `
                     <div class="col-md-6 col-sm-12">
                         <div class="wrapper_item-h">
-                            <h3>${phoes[i].name}</h3>
-                            <p>${phoes[i].info}</p>
+                            <h3>${pho[i].name}</h3>
+                            <p>${pho[i].info}</p>
                         </div>
                     </div>
                 `;
