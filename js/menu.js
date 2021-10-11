@@ -207,6 +207,90 @@ let salads = [
     },
 ];
 
+// Pho 
+let pho = [
+    {
+        name: 'BEEF BRISKET PHỞ',
+        info: 'Tender brisket (a bit like roast beef) slow cooked in our broth',
+        type: [
+            'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'STEAK WITH GARLIC PHỞ',
+        info: 'Flash fried steak with garlic (Hanoi style) in beef broth',
+        type: [
+            'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'TOFU & MUSHROOM PHỞ',
+        info: 'Tofu & button mushrooms in chicken or veggie broth',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: '3 MUSHROOMS PHỞ',
+        info: 'Enoki, shiitake & button mushrooms in chicken or veggie both',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'SUPER GREEN SOUP',
+        info: 'Morning glory, green beans, pak choi, fresh lime & Thai basil in veggie broth',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'CRAB NOODLE SOUP',
+        info: 'A Hanoi classic; vermicelli noodles in a rich tomato & crab broth with wafer thin steak',
+        type: [
+            'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+];
+
+
+let sides = [
+    {
+        name: 'PRAWN CRACKERS',
+        info: 'with sweet chilli sauce',
+        type: [
+            'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'PRAWN-LESS CRACKERS',
+        info: 'with sweet chilli sauce',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: '"PRAWNLESS" CRACKERS',
+        info: 'with sweet chilli sauce',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'STIR FRIED SPINACH',
+        info: 'Stir fried morning glory (water spinach) in garlic',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+    {
+        name: 'CHINESE LEAF',
+        info: 'Stir fried Chinese leaf in soy sauce',
+        type: [
+            'vegan', 'vegetarian', 'dairy free', 'gluten free', '<500 cal'
+        ]
+    },
+];
 
 
 // Event when clicking nav-item in Desktop Nav
@@ -249,13 +333,14 @@ for (let i = 0; i < a_MenuDesktops.length; i++) {
                         item.classList.remove("outFilter");
                     });
 
-                    for (let i = 0; i < boxFilters.length; i++) {
-                        if (boxFilters[i].classList.contains("active")) {
+                    // for (let i = 0; i < boxFilters.length; i++) {
+                    //     if (boxFilters[i].classList.contains("active")) {
                             
-                        }
-                    }
+                    //     }
+                    // }
                 } else {
                     boxFilters[i].classList.add("active");
+                    // alert('false');
                     items.forEach(function (item) {
                         
                         let filteredListName = starters.filter(function(starter) {
@@ -293,8 +378,6 @@ for (let i = 0; i < a_MenuDesktops.length; i++) {
                     `
                 }
 
-                
-
                 break;
             }
 
@@ -314,11 +397,42 @@ for (let i = 0; i < a_MenuDesktops.length; i++) {
                 break;
             }
 
+            case 'pho': {
+                this.classList.add("active");
+
+                for (var i = 0; i < pho.length; i++) {
+                    rowListItem.innerHTML += `
+                        <div class="col-md-6 col-sm-12">
+                            <div class="wrapper_item-h">
+                                <h3>${pho[i].name}</h3>
+                                <p>${pho[i].info}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+                break;
+            }
+
+            case 'sides': {
+                this.classList.add("active");
+
+                for (var i = 0; i < sides.length; i++) {
+                    rowListItem.innerHTML += `
+                        <div class="col-md-6 col-sm-12">
+                            <div class="wrapper_item-h">
+                                <h3>${sides[i].name}</h3>
+                                <p>${sides[i].info}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+                break;
+            }
+
         }
 
         // Cập nhật danh sách item
-        items = document.querySelectorAll(".list_item-h .wrapper_item-h");
-                
+        items = document.querySelectorAll(".list_item-h .wrapper_item-h");  
 
     });
 }
@@ -336,9 +450,6 @@ menuMobile.addEventListener("change", function() {
     $(".menu_display-h .wrapper_image-h .title-h").html(subject.title);
     $(".menu_display-h .wrapper_image-h .info-h").html(subject.info);
     $(".menu_display-h .wrapper_image-h img").attr("src", subject.imgSrc);
-
-
-    
 
 
     rowListItem.innerHTML = "";
@@ -364,6 +475,38 @@ menuMobile.addEventListener("change", function() {
                         <div class="wrapper_item-h">
                             <h3>${salads[i].name}</h3>
                             <p>${salads[i].info}</p>
+                        </div>
+                    </div>
+                `;
+            }
+            break;
+        }
+
+        case 'phoes': {
+            this.classList.add("active");
+
+            for (var i = 0; i < phoes.length; i++) {
+                rowListItem.innerHTML += `
+                    <div class="col-md-6 col-sm-12">
+                        <div class="wrapper_item-h">
+                            <h3>${phoes[i].name}</h3>
+                            <p>${phoes[i].info}</p>
+                        </div>
+                    </div>
+                `;
+            }
+            break;
+        }
+
+        case 'sides': {
+            this.classList.add("active");
+
+            for (var i = 0; i < sides.length; i++) {
+                rowListItem.innerHTML += `
+                    <div class="col-md-6 col-sm-12">
+                        <div class="wrapper_item-h">
+                            <h3>${sides[i].name}</h3>
+                            <p>${sides[i].info}</p>
                         </div>
                     </div>
                 `;
