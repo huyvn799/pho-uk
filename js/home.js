@@ -45,22 +45,22 @@ window.onscroll = function() {
             switch (i) {
                 case 0:
                     {
-                        $(".background_image-h img").attr("src", "../images/home/Nutrition-Single-Background2.jpg");
+                        $(".background_image-h img").attr("src", "./images/home/Nutrition-Single-Background2.jpg");
                         break;
                     }
                 case 1:
                     {
-                        $(".background_image-h img").attr("src", "../images/home/background-2D2E30-1.jpg");
+                        $(".background_image-h img").attr("src", "./images/home/background-2D2E30-1.jpg");
                         break;
                     }
                 case 2:
                     {
-                        $(".background_image-h img").attr("src", "../images/home/Home-Background-2.jpg");
+                        $(".background_image-h img").attr("src", "./images/home/Home-Background-2.jpg");
                         break;
                     }
                 case 3:
                     {
-                        $(".background_image-h img").attr("src", "../images/home/Menu-Background.jpg");
+                        $(".background_image-h img").attr("src", "./images/home/Menu-Background.jpg");
                         break;
                     }
             }
